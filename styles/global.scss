@@ -1,0 +1,255 @@
+$our-orange: #ff6600;
+$our-blue: #003153;
+$our-black: #000000;
+@font-face {
+  font-family: "Custom Font";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; /* Read next point */
+  unicode-range: U+000-5FF; /* Download only latin glyphs */
+  src: local("Icon Font"), url("../src/assets/REZ.woff") format("woff");
+}
+@font-face {
+  font-family: "Icon Font";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; /* Read next point */
+  unicode-range: U+000-5FF; /* Download only latin glyphs */
+  src: local("Icon Font"), url("../src/assets/XXIX.woff") format("woff");
+}
+
+html,
+body {  
+  height: 100%;
+  background-color: #000000;
+  margin: 0;
+}
+
+.sv{
+  font-family: "Icon Font", "Arial", sans-serif !important;
+  color: white;
+}
+.stack{
+  font-family: "Icon Font", "Arial", sans-serif !important;
+  color:$our-orange;
+}
+.view{
+  font-family: "Icon Font", "Arial", sans-serif !important;
+  color:$our-blue;
+}
+b,
+p,a {
+  font-family: "Custom Font", "Arial", sans-serif ;
+  color: white;
+  font-size: x-large;  
+}
+
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.bar {
+  top: 0;
+  width: 6px;
+  position: fixed;
+  height: 100%;
+  right: 0;
+  background-color: white;
+}
+.fakebar {
+  top: 0;
+  width: 6px;
+  position: fixed;
+  height: 150%;
+  right: 0;
+  background-color: white;
+}
+.progress {
+  width: 100%;
+  height: 50%;
+  background-color: black;
+}
+
+
+.header{
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  z-index: 999;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  width: 100%;
+  background-color: $our-black;
+    -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
+.header .menu {
+  padding: 15px 50px 0px 50px;
+  text-align: right;
+  width: auto;
+  
+}
+.header .menu Button{ 
+  padding: 0px 0px 0px 50px;
+}
+.header .logoname{ 
+  width: fit-content;
+  padding: 20px 0px 0px 20px;
+}
+
+
+//front
+.front{
+  width: 100%;
+  height: 100vh;
+  background: black;
+}
+.front .stack{
+  padding-top: 25vh;
+  margin-left: 16vw;
+  height: 20vw;
+  width: 50vw;
+  font-size: 10vw;
+
+}
+.front .stack .s{
+  display: flex;
+  -webkit-animation: fadeins 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadeins 2s; /* Firefox < 16 */
+        -ms-animation: fadeins 2s; /* Internet Explorer */
+         -o-animation: fadeins 2s; /* Opera < 12.1 */
+            animation: fadeins 2s;
+
+}
+.front .stack .v{
+  display: flex;
+  margin-top: -8%;
+  margin-left: 26.4%;
+  -webkit-animation: fadeinv 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadeinv 2s; /* Firefox < 16 */
+        -ms-animation: fadeinv 2s; /* Internet Explorer */
+         -o-animation: fadeinv 2s; /* Opera < 12.1 */
+            animation: fadeinv 2s;
+}
+.front .stack .sv .o{
+  color: #ff6600;
+
+}
+.front .stack .sv .b{
+  color: #003153;
+}
+
+.front .fdd{
+  display: inline-block;
+  margin-top: 0vh;
+  margin-left: 16vw;
+}
+.front .fdd div a{
+  font-size: xx-large;
+}
+.front .icon{
+  position: absolute;
+  top: 25vh;
+  margin-left: 57vw;
+}
+.front .icon img{
+  height: 20vw;
+  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
+}
+.principal{
+
+  width: 100%;
+  height: 2000px;
+  background: linear-gradient(45deg, $our-orange 30%, $our-blue 90%);
+}
+
+@media (max-width: 991px) {}
+
+
+////// Animations \/\/\/\/\/\/\/
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+//// fade in stack
+@keyframes fadeins {
+  from { opacity: 0;
+    margin-top: -10%;
+  }
+  to   { opacity: 1;
+    margin-top: 0%;
+   }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeins {
+  from { opacity: 0;
+    margin-top: -10%;
+  }
+  to   { opacity: 1;
+    margin-top: 0%;
+   }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeins {
+  from { opacity: 0;
+    margin-top: -10%;
+  }
+  to   { opacity: 1;
+    margin-top: 0%;
+   }
+}
+
+//// fade in view
+@keyframes fadeinv {
+  from { opacity: 0;
+    margin-top: 8%;
+  }
+  to   { opacity: 1;
+    margin-top: -8%;
+   }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeinv {
+  from { opacity: 0;
+    margin-top: 8%;
+  }
+  to   { opacity: 1;
+    margin-top: -8%;
+   }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeinv {
+  from { opacity: 0;
+    margin-top: 8%;
+  }
+  to   { opacity: 1;
+    margin-top: -8%;
+   }
+}

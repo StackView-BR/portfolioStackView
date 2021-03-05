@@ -19,8 +19,11 @@
   },
   "homepage": "https://github.com/lisbao1303/start-view#readme",
   "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
     "next": "^10.0.7",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "sass": "^1.32.8"
   }
 }

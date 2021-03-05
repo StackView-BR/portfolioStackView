@@ -1,5 +1,14 @@
+import Header from '../src/components/inout/header';
+import Front from '../src/components/startfront/front';
 function Home(){
-    return <div>Home 22</div>
+
+    return <div>
+        <Header/>
+        <Front/>
+        <div className="principal">
+            
+        </div>
+        </div>
 }
 
 export default Home
