@@ -7,7 +7,7 @@ $our-black: #000000;
   font-style: normal;
   font-display: swap; /* Read next point */
   unicode-range: U+000-5FF; /* Download only latin glyphs */
-  src: local("Icon Font"), url("../src/assets/REZ.woff") format("woff");
+  src: local("Icon Font"), url("/fonts/REZ.woff") format("woff");
 }
 @font-face {
   font-family: "Icon Font";
@@ -15,7 +15,7 @@ $our-black: #000000;
   font-style: normal;
   font-display: swap; /* Read next point */
   unicode-range: U+000-5FF; /* Download only latin glyphs */
-  src: local("Icon Font"), url("../src/assets/XXIX.woff") format("woff");
+  src: local("Icon Font"), url("/fonts/XXIX.woff") format("woff");
 }
 
 html,
@@ -138,11 +138,19 @@ p,a {
             animation: fadeinv 2s;
 }
 .front .stack .sv .o{
-  color: #ff6600;
+  color: white;
+  animation-name: acolor;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
 
 }
 .front .stack .sv .b{
-  color: #003153;
+  color: white;
+  animation-name: vcolor;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
 }
 
 .front .fdd{
@@ -150,6 +158,28 @@ p,a {
   margin-top: 0vh;
   margin-left: 16vw;
 }
+.front .fdd .f{
+  opacity: 0;
+  animation-name: fadeinf;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+.front .fdd .d{
+  opacity: 0;
+  animation-name: fadeinf;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+.front .fdd .m{
+  opacity: 0;
+  animation-name: fadeinf;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
 .front .fdd div a{
   font-size: xx-large;
 }
@@ -252,4 +282,97 @@ p,a {
   to   { opacity: 1;
     margin-top: -8%;
    }
+}
+
+////// Animations A e V
+@keyframes acolor {
+  0% { color: white; }
+  10%{ color: #ff6600; }
+  50%{color: white;}
+  100%{color: #ff6600;}
+}
+
+/* Firefox < 16 */
+@-moz-keyframes acolor {
+  0% { color: white; }
+  10%{ color: #ff6600; }
+  50%{color: white;}
+  100%{color: #ff6600;}
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes acolor {
+  0% { color: white; }
+  10%{ color: #ff6600; }
+  50%{color: white;}
+  100%{color: #ff6600;}
+}
+
+@keyframes vcolor {
+  20% { color: white; }
+  30%{ color: $our-blue; }
+  50%{color: white;}
+  100%{color: $our-blue;}
+}
+
+/* Firefox < 16 */
+@-moz-keyframes vcolor {
+  20% { color: white; }
+  30%{ color: $our-blue; }
+  50%{color: white;}
+  100%{color: $our-blue;}
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes vcolor {
+  20% { color: white; }
+  30%{ color: $our-blue; }
+  50%{color: white;}
+  100%{color: $our-blue;}
+}
+
+/// fdd
+
+@keyframes fadeinf {
+  from { opacity: 0;
+    margin-top: 10%;
+  }
+  to   { opacity: 1;
+    margin-top: 0%;
+   }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeinf {
+  from { opacity: 0;
+    margin-top: 10%;
+  }
+  to   { opacity: 1;
+    margin-top: 0%;
+   }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeinf {
+  from { opacity: 0;
+    margin-top: 10%;
+  }
+  to   { opacity: 1;
+    margin-top: 0%;
+   }
+}
+
+
+.load{
+  position:fixed;
+    padding:0;
+    margin:0;
+
+    top:0;
+    left:0;
+
+    width: 100%;
+    height: 100%;
+    
+  background-color: #ff6600;
 }

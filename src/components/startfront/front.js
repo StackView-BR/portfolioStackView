@@ -11,9 +11,9 @@ function Front() {
             width="auto"
         /></div>
         <div className="fdd">
-            <div><a>full stack</a></div>
-            <div><a>design</a></div>
-            <div><a>data management</a></div>
+            <div className="f"><a>full stack</a></div>
+            <div className="d"><a>design</a></div>
+            <div className="m" ><a>data management</a></div>
         </div>
     </div>
 
