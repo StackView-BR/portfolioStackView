@@ -259,10 +259,9 @@ p,a {
 }
 .foot .contact .card .social .w{
   margin-top: -15px;
-}
-.foot .contact .card .social .w{
   padding-left: 30px;
 }
+
 .foot .contact .card .social .w #w:hover{
   
   background: #26D366;
@@ -347,11 +346,15 @@ p,a {
 }
 .front{
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .front .icon{
   position: "relative";
-  top: 80px;
-  margin-left: 35vw;  
+  width: 100%;
+  top:0vh;
+  margin-left: 0vw;
+   
 }
 .front .icon #back{
   height: 40vh;
@@ -366,31 +369,57 @@ p,a {
 }
 .front .stack{
   padding-top: 50vh;
-  margin-left: 16vw;
-  height: 20vw;
+  margin-left: 0;
+  height: 20vh;
   width: 50vw;
   font-size: 10vw;
 
 }
 .footer{
   height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .foot{
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
 }
 .foot .contact{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
   width: 100%;
+  padding: 0px;
+}
+.foot .contact .logo {
+  padding: 0px;
+}
+.foot .contact .card .social{
+  margin: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.foot .contact .card .social .w{
+  padding: 30px 0 0 0;
+  margin-bottom: -30px;
+  margin-left: -15px;
 }
 .foot .follow{
   text-align: center;
-  padding: 0px 0 0 10px;
+  padding: 0px;
   width: 100%;
 }
 .foot .follow .line{
   width: 100%;
   display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
   
 }
 
