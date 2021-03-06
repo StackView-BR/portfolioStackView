@@ -108,7 +108,7 @@ p,a {
 .front{
   width: 100%;
   height: 100vh;
-  background: black;
+  background: red;
 }
 .front .stack{
   padding-top: 25vh;
@@ -188,13 +188,69 @@ p,a {
   top: 25vh;
   margin-left: 57vw;
 }
-.front .icon img{
+.front .icon #back{
+  position: absolute;
   height: 20vw;
   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 3s; /* Firefox < 16 */
         -ms-animation: fadein 3s; /* Internet Explorer */
          -o-animation: fadein 3s; /* Opera < 12.1 */
             animation: fadein 3s;
+}
+.front .icon .front{
+  position: absolute;
+  padding: 6.25vw 0 0 12.81vw;
+  background: none;
+  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;       
+  
+}
+.front .icon .front #f{
+  height: 7.5vw;
+  animation-name: spin;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  }
+
+.footer{
+  height: 50vh;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+.foot{
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.foot .contact{
+  padding: 10px 0 0 10px;
+  height: 50%;
+  width: 50%;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+.foot .follow{
+  padding: 10px 0 0 10px;
+  height: 50%;
+  width: 50%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer .rodape{
+  vertical-align: bottom;
+  width: 100%;  
+  display: flex;
+  justify-content: space-between;
+}
+.footer .rodape .made{
+  padding: 10px;
 }
 .principal{
 
@@ -362,6 +418,15 @@ p,a {
    }
 }
 
+@-moz-keyframes spin { 0% { -moz-transform: rotateZ(0deg); }
+50% { -moz-transform: rotateZ(0deg); }
+100% { -moz-transform: rotateZ(-1080deg); } }
+@-webkit-keyframes spin { 0% { -webkit-transform: rotateZ(0deg); }
+50% { -webkit-transform: rotateZ(0deg); }
+100% { -webkit-transform: rotateZ(-1080deg); } }
+@keyframes spin { 0% { -webkit-transform: rotateZ(0deg); transform:rotateZ(0deg); }
+50% { -webkit-transform: rotateZ(0deg); transform:rotateZ(0deg); }
+100% { -webkit-transform: rotateZ(-1080deg); transform:rotateZ(-1080deg); } }
 
 .load{
   position:fixed;

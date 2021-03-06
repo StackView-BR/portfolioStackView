@@ -13,7 +13,7 @@ function Head({ title }) {
       <meta property="og:title" content="StackView" key="title" />
       <meta name="description" content="Automação, Iot e Full-Stack, Desenvolvimento Sistemas de controle e manutenção, Aplicativos, PWA, websites responsivos e gestão de dados" />
       <meta name="keywords" content="engenharia, programação, webdesing, dev, automação, internet das coisas, iot, full-stack, desenvolvimento, controle, manutenção, softwares, aplicativos, pwa, website, site, responsivo, banco de dados, dados, sistemas, sensores, embarcados, sistemas digitais, webdesign, design, marketing, digital" />
-      
+
       <link
         rel="preload"
         href="/fonts/REZ.woff"
@@ -28,6 +28,7 @@ function Head({ title }) {
         type="font/woff"
         crossOrigin=""
       />
+      <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'></link>
     </NextHead>
   );
 }
