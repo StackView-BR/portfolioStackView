@@ -7,7 +7,7 @@ function Home(){
 
     return <div>
         
-        <Header/>
+        <Header />
         <Front/>
         
         <div className="principal">

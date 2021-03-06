@@ -10,8 +10,8 @@ function Head({ title }) {
       </title>
       <meta charSet="UTF-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <meta property="og:title" content="My page title" key="title" />
-      <meta name="description" content=":Automação, Iot e Full-Stack, Desenvolvimento Sistemas de controle e manutenção, Sistemas, Aplicativos, PWA, websites responsivos e Banco de dados" />
+      <meta property="og:title" content="StackView" key="title" />
+      <meta name="description" content="Automação, Iot e Full-Stack, Desenvolvimento Sistemas de controle e manutenção, Aplicativos, PWA, websites responsivos e gestão de dados" />
       <meta name="keywords" content="engenharia, programação, webdesing, dev, automação, internet das coisas, iot, full-stack, desenvolvimento, controle, manutenção, softwares, aplicativos, pwa, website, site, responsivo, banco de dados, dados, sistemas, sensores, embarcados, sistemas digitais, webdesign, design, marketing, digital" />
       
       <link
