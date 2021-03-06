@@ -1,0 +1,202 @@
+@media (max-width: 991px) {
+  .bar {
+    display: none;
+  }
+  .fakebar {
+    display: none;
+  }
+  .progress {
+    display: none;
+  }
+  .suma{
+        display: none;
+      }
+      .apareca{
+        display: "";
+      }
+    .front{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+  .front .stack{
+    position: relative;    
+    top: 38vh;
+    padding: 0;
+    margin: 0;
+    height: 50%;
+    width: 100%;
+    font-size: 10vh;  
+  }
+  .front .stack .s{
+    display: flex;
+    justify-content: center;
+    margin-left: -2vh;
+  }
+  .front .stack .v{
+    display: flex;
+    justify-content: center;
+    margin-left: 14.1vh;
+    margin-top: -4vh;
+  
+  }  
+  .front .fdd{
+    position: relative;
+    top: 15vh;
+    padding: 0;
+    margin-left: 12vw;
+    width: auto;
+    display: block;
+  }  
+  .front .fdd div a{
+    font-size: xx-large;
+  }
+  .front .icon{
+    position: relative;
+    top: 15vh;
+    margin-left: 0px;
+  }
+  .front .icon #back{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    height: 20vh;
+  }
+  .front .icon .front{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+    padding: 6.2vh 0 0 0;
+  }
+  .front .icon .front #f{
+    height: 7.5vh;
+  }
+
+  .footer{
+    height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  }
+  .foot{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  }
+  .foot .contact{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  padding: 0px;
+  margin-left: 5vw; 
+  }
+  .foot .contact .logo {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+  }
+  .foot .contact .card {
+    padding: 0px;
+  }
+  .foot .contact .card img{
+    height: 50px;
+    border-radius: 30px;
+  }
+  .foot .contact .card a{
+    top: 0;
+    padding: 0;
+  }
+  .foot .contact .card .social{
+    margin-left: 0px;
+    padding: 40px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .foot .contact .card .social a{
+    margin: 0px;
+  }
+  .foot .contact .card .social .w{
+    padding: 0px 0px 0 0;
+    margin-right: 10vw;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  }
+  .foot .contact .card .social .w a{
+    margin-left: 10px;
+  }
+  .foot .contact .logo img{
+    width: auto;
+    height: auto;
+    max-width: 150px;
+    max-height: 150px;
+  }
+  
+  .foot .follow{
+    text-align: center;
+  padding: 30px 0 10px 0;
+  width: 100%;
+  }
+  
+  .foot .follow .line{
+    width: 100%;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0 0 0;
+    
+  }
+  .foot .follow .line a{
+    margin: 0px;
+    padding: 10px 0px 10px 10px;
+  }
+  
+  .foot .follow .line #be:hover{
+    height: 60px;
+    background: #0057FF;
+  }
+  .foot .follow .line #face:hover{
+    height: 60px;
+    background: #0B84EE;
+  }
+  .foot .follow .line #git:hover{
+    height: 60px;
+    background: "";
+  }
+  .foot .follow .line #insta:hover{
+    height: 60px;
+    background: #D7407F;
+  }
+  .foot .follow .line #in:hover{
+    height: 60px;
+    background: #0A66C2;
+  }
+  
+  .foot .follow .line img{
+    height: 50px;
+    border-radius: 30px;
+    
+  }
+  
+  .footer .rodape{
+    vertical-align: bottom;
+    width: 100%;  
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .rodape .made{
+    padding: 10px;
+  }
+}

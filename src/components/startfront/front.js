@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 function Front() {
 
     return <div className="front">

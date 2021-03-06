@@ -7,7 +7,7 @@ function Footer() {
                 width="auto"
             /></div>
 
-            <div className="card"> <div className="social"><a>Phone</a>:  +5517988309968 <div className="w"><a ><img
+            <div className="card"> <div className="social"><div><a>Phone</a>:  +5517988309968 </div><div className="w"><a ><img
                 id="w"
                 src="/icons/whats.png"
                 width="auto"

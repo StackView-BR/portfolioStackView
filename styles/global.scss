@@ -70,8 +70,6 @@ p,a {
   height: 50%;
   background-color: black;
 }
-
-
 .header{
   top: 0;
   left: 0;
@@ -337,93 +335,6 @@ p,a {
   background: linear-gradient(45deg, $our-orange 30%, $our-blue 90%);
 }
 
-@media (max-width: 991px) {
-.suma{
-  display: none;
-}
-.apareca{
-  display: "";
-}
-.front{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.front .icon{
-  position: "relative";
-  width: 100%;
-  top:0vh;
-  margin-left: 0vw;
-   
-}
-.front .icon #back{
-  height: 40vh;
-}
-.front .icon .front{
-  position: relative;
-  padding: 12.5vh 0 0 25.62vh;
-}
-.front .icon .front #f{
-  
-  height: 15vh;
-}
-.front .stack{
-  padding-top: 50vh;
-  margin-left: 0;
-  height: 20vh;
-  width: 50vw;
-  font-size: 10vw;
-
-}
-.footer{
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.foot{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0px;
-}
-.foot .contact{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  width: 100%;
-  padding: 0px;
-}
-.foot .contact .logo {
-  padding: 0px;
-}
-.foot .contact .card .social{
-  margin: 0;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-.foot .contact .card .social .w{
-  padding: 30px 0 0 0;
-  margin-bottom: -30px;
-  margin-left: -15px;
-}
-.foot .follow{
-  text-align: center;
-  padding: 0px;
-  width: 100%;
-}
-.foot .follow .line{
-  width: 100%;
-  display: block;
-    margin-left: auto;
-    margin-right: auto;
-  
-}
-
-}
 
 
 ////// Animations \/\/\/\/\/\/\/
@@ -605,4 +516,3 @@ p,a {
     
   background-color: #ff6600;
 }
-
