@@ -24,6 +24,9 @@ body {
   background-color: #000000;
   margin: 0;
 }
+.apareca{
+  display: "none";
+}
 
 .sv{
   font-family: "Icon Font", "Arial", sans-serif !important;
@@ -238,7 +241,7 @@ p,a {
   padding: 0px 20px 0px 0px;
 }
 .foot .contact .card {
-  padding: 33px 0px 0px 20px;
+  padding: 10px 0px 0px 20px;
 }
 .foot .contact .card img{
   height: 50px;
@@ -258,6 +261,23 @@ p,a {
 .foot .contact .card .social .w{
   margin-top: -15px;
   padding-left: 30px;
+}
+
+.foot .contact .card .social .w #w{
+animation-name: buth;
+animation-delay: 1s;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+animation-fill-mode: backwards;
+background: #26D366;
+}
+.foot .contact .card .social .w #t{
+  animation-name: buth;
+animation-delay: 2s;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+animation-fill-mode: backwards;
+background: #37AEF3;
 }
 
 .foot .contact .card .social .w #w:hover{
@@ -291,6 +311,46 @@ p,a {
   margin: 10px;
   
 }
+.foot .follow .line #be{
+  background: #0057FF;
+  animation-name: buth2;
+animation-delay: 0s;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+animation-fill-mode: forwards;
+}
+.foot .follow .line #face{
+  background: #0B84EE;
+  animation-name: buth2;
+  animation-delay: 1.2s;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;  
+}
+.foot .follow .line #git{
+  background: #161B22;
+  animation-name: buth2;
+  animation-delay: 0.8s;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+.foot .follow .line #insta{
+  background: #D7407F;
+  animation-name: buth2;
+  animation-delay: 0.4s;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+.foot .follow .line #in{
+  background: #0A66C2;
+  animation-name: buth2;
+  animation-delay: 1.6s;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
 
 .foot .follow .line #be:hover{
   height: 60px;
@@ -302,7 +362,7 @@ p,a {
 }
 .foot .follow .line #git:hover{
   height: 60px;
-  background: "";
+  background: #161B22;
 }
 .foot .follow .line #insta:hover{
   height: 60px;
@@ -490,6 +550,55 @@ p,a {
   }
   to   { opacity: 1;
     margin-top: 0%;
+   }
+}
+
+@keyframes buth {
+  100%  { 
+    background: none;
+   }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes buth {
+  100%  { 
+    background: none;
+   }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes buth {
+  100%  { 
+    background: none;
+   }
+}
+
+@keyframes buth2 {
+  90%{
+
+  }
+  100%  { 
+    background: none;
+   }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes buth2 {
+  90%{
+    
+  }
+  100%  { 
+    background: none;
+   }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes buth2 {
+  90%{
+    
+  }
+  100%  { 
+    background: none;
    }
 }
 

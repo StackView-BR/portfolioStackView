@@ -7,7 +7,7 @@ function Footer() {
                 width="auto"
             /></div>
 
-            <div className="card"> <div className="social"><div><a>Phone</a>:  +5517988309968 </div><div className="w"><a ><img
+            <div className="card"> <div className="social"><div><a>Phone</a>: <br /> +5517988309968 </div><div className="w"><a ><img
                 id="w"
                 src="/icons/whats.png"
                 width="auto"
@@ -18,9 +18,10 @@ function Footer() {
                     src="/icons/tel.png"
                     width="auto"
 
-                /></a></div></div><br /><br />
-                <a>Email</a>:  sv@stackview.com.br<br /><br />
-                <a>Address</a>:  Av. João Naves de Ávila, 2121<br /> Santa Mônica, Uberlândia - MG, 38408-100, Brasil</div>
+                /></a></div></div>
+                <br /><br /><br />
+                <a>Email</a>: <br />sv@stackview.com.br<br /><br />
+                <a>Address</a>:  <br />Av. João Naves de Ávila, 2121<br /> Santa Mônica, Uberlândia - MG, 38408-100, Brasil</div>
 
 
         </div>
@@ -34,8 +35,8 @@ function Footer() {
 
                     /></a>
                     <a><img
-                        id="face"
-                        src="/icons/face.png"
+                        id="insta"
+                        src="/icons/insta.png"
                         width="auto"
 
                     /></a>
@@ -46,11 +47,12 @@ function Footer() {
 
                     /></a>
                     <a><img
-                        id="insta"
-                        src="/icons/insta.png"
+                        id="face"
+                        src="/icons/face.png"
                         width="auto"
 
                     /></a>
+                    
                     <a><img
                         id="in"
                         src="/icons/in.png"

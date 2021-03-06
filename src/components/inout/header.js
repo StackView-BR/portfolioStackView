@@ -27,11 +27,11 @@ class Header extends React.Component {
   handleScroll(event) {
     let totalHeight = document.body.scrollHeight - window.innerHeight;
     console.log(window.innerHeight);
-    if(window.pageYOffset>= window.innerHeight){
+    if(window.pageYOffset>= window.innerHeight && window.pageYOffset<=totalHeight){
       this.setState({
         back: "black",
       })
-    }else{
+    }else if(window.pageYOffset>=totalHeight || window.pageYOffset<=window.innerHeight){
       this.setState({
         back: "rgba(0,0,0,0.1)",
       })
@@ -49,7 +49,7 @@ class Header extends React.Component {
         <Head title="StackView" />
         <div className="header" style={{ backgroundColor: this.state.back  }} position="fixed">
 
-          <div className="logoname"><a className="sv">Stack</a><a className="sv">View</a></div>
+          <div className="logoname"><a className="stack">S</a><a className="view">V</a></div>
           <div className="menu suma">
             <Link href="" ><Button><a>Portfolio</a></Button></Link>
             <Link href="" ><Button><a>Developers</a></Button></Link>
