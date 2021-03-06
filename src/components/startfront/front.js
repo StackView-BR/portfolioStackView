@@ -1,3 +1,4 @@
+import Image from 'next/image'
 
 function Front() {
 
@@ -6,7 +7,9 @@ function Front() {
             <div className="sv s"> St <div className="o"> a </div>ck</div>
             <div className="sv v"><div className="b">V</div>iew</div>
         </div>
-        <div className="icon"><img
+        <div className="icon">
+        
+            <img
             id="back"
             src="/nodisk.png"
             width="auto"
@@ -14,6 +17,7 @@ function Front() {
                 id="f"
                 src="/disk.png"
                 width="auto"
+                
             /></div>
             </div>
         <div className="fdd">

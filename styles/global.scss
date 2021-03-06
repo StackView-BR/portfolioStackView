@@ -108,7 +108,7 @@ p,a {
 .front{
   width: 100%;
   height: 100vh;
-  background: red;
+  background: black;
 }
 .front .stack{
   padding-top: 25vh;
@@ -210,6 +210,7 @@ p,a {
 }
 .front .icon .front #f{
   height: 7.5vw;
+  image-rendering: auto;
   animation-name: spin;
   animation-duration: 3s;
   animation-delay: 1s;
@@ -218,7 +219,7 @@ p,a {
   }
 
 .footer{
-  height: 50vh;
+  height: 40vh;
   width: 100%;
   background-color: black;
   color: white;
@@ -229,18 +230,98 @@ p,a {
   width: 100%;
 }
 .foot .contact{
-  padding: 10px 0 0 10px;
-  height: 50%;
-  width: 50%;
-  font-family: 'Roboto', sans-serif;
+  margin: 30px;
+  padding: 10px;
+  display: flex;
+  height: 60%;
+  width: 60%;
+  font-family: 'Roboto', sans-serif;  
+}
+.foot .contact .logo {
+  padding: 0px 20px 0px 0px;
+}
+.foot .contact .card {
+  padding: 33px 0px 0px 20px;
+}
+.foot .contact .card img{
+  height: 50px;
+  border-radius: 30px;
+}
+.foot .contact .card a{
+  top: -10px;
+  padding: 5px;
+}
+.foot .contact .card .social{
+  margin-bottom: -40px;
+  display: flex;
+}
+.foot .contact .card .social a{
+  margin-top: -6px;
+}
+.foot .contact .card .social .w{
+  margin-top: -15px;
+}
+.foot .contact .card .social .w{
+  padding-left: 30px;
+}
+.foot .contact .card .social .w #w:hover{
   
+  background: #26D366;
+}
+.foot .contact .card .social .w #t:hover{
+  
+  background: #37AEF3;
+}
+.foot .contact .logo img{
+  width: auto;
+  height: auto;
+  max-width: 150px;
+  max-height: 150px;
 }
 
 .foot .follow{
-  padding: 10px 0 0 10px;
-  height: 50%;
-  width: 50%;
+  padding: 45px 0 0 10px;
+  height: 40%;
+  width: 40%;
   font-family: 'Roboto', sans-serif;
+}
+
+.foot .follow .line{
+  display: flex;
+  padding: 10px 0 0 0;
+  margin-left: -15px;
+  
+}
+.foot .follow .line a{
+  margin: 10px;
+  
+}
+
+.foot .follow .line #be:hover{
+  height: 60px;
+  background: #0057FF;
+}
+.foot .follow .line #face:hover{
+  height: 60px;
+  background: #0B84EE;
+}
+.foot .follow .line #git:hover{
+  height: 60px;
+  background: "";
+}
+.foot .follow .line #insta:hover{
+  height: 60px;
+  background: #D7407F;
+}
+.foot .follow .line #in:hover{
+  height: 60px;
+  background: #0A66C2;
+}
+
+.foot .follow .line img{
+  height: 50px;
+  border-radius: 30px;
+  
 }
 
 .footer .rodape{
@@ -441,3 +522,4 @@ p,a {
     
   background-color: #ff6600;
 }
+
