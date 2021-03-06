@@ -50,7 +50,7 @@ class Header extends React.Component {
         <div className="header" style={{ backgroundColor: this.state.back  }} position="fixed">
 
           <div className="logoname"><a className="sv">Stack</a><a className="sv">View</a></div>
-          <div className="menu">
+          <div className="menu suma">
             <Link href="" ><Button><a>Portfolio</a></Button></Link>
             <Link href="" ><Button><a>Developers</a></Button></Link>
             <Link href="" ><Button><a>Contact Us</a></Button></Link>            

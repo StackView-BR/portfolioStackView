@@ -233,7 +233,6 @@ p,a {
   margin: 30px;
   padding: 10px;
   display: flex;
-  height: 60%;
   width: 60%;
   font-family: 'Roboto', sans-serif;  
 }
@@ -281,7 +280,6 @@ p,a {
 
 .foot .follow{
   padding: 45px 0 0 10px;
-  height: 40%;
   width: 40%;
   font-family: 'Roboto', sans-serif;
 }
@@ -340,7 +338,63 @@ p,a {
   background: linear-gradient(45deg, $our-orange 30%, $our-blue 90%);
 }
 
-@media (max-width: 991px) {}
+@media (max-width: 991px) {
+.suma{
+  display: none;
+}
+.apareca{
+  display: "";
+}
+.front{
+  display: block;
+}
+.front .icon{
+  position: "relative";
+  top: 80px;
+  margin-left: 35vw;  
+}
+.front .icon #back{
+  height: 40vh;
+}
+.front .icon .front{
+  position: relative;
+  padding: 12.5vh 0 0 25.62vh;
+}
+.front .icon .front #f{
+  
+  height: 15vh;
+}
+.front .stack{
+  padding-top: 50vh;
+  margin-left: 16vw;
+  height: 20vw;
+  width: 50vw;
+  font-size: 10vw;
+
+}
+.footer{
+  height: auto;
+}
+.foot{
+  display: block;
+}
+.foot .contact{
+  width: 100%;
+}
+.foot .follow{
+  text-align: center;
+  padding: 0px 0 0 10px;
+  width: 100%;
+}
+.foot .follow .line{
+  width: 100%;
+  display: block;
+    margin-left: auto;
+    margin-right: auto
+  
+}
+
+}
 
 
 ////// Animations \/\/\/\/\/\/\/
