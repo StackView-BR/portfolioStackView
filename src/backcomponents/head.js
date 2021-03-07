@@ -14,7 +14,7 @@ function Head({ title }) {
       <meta name="description" content="Automação, Iot e Full-Stack, Desenvolvimento Sistemas de controle e manutenção, Aplicativos, PWA, websites responsivos e gestão de dados" />
       <meta name="keywords" content="engenharia, programação, webdesing, dev, automação, internet das coisas, iot, full-stack, desenvolvimento, controle, manutenção, softwares, aplicativos, pwa, website, site, responsivo, banco de dados, dados, sistemas, sensores, embarcados, sistemas digitais, webdesign, design, marketing, digital" />
       <link rel="shortcut icon" href="/static/favicon.ico" />
-      <link rel="image_src" href="/static/preview.png" />
+      <link rel="image_src" href="/preview.png" />
 
       <meta name="theme-color" content="#000000"/>
 
