@@ -20,10 +20,10 @@ function Head({ title }) {
       <link rel="shortcut icon" href="/static/favicon.ico" />
       <link rel="image_src" href="/preview.png" />
 
-      <meta property="twitter:card" value="summary_large_image"/>
-      <meta property="twitter:title" content="StackView - Desenvolvimento Full-Stack, Design, Engenharia" />
-      <meta property="twitter:description" content="Automação, Iot e Full-Stack, Desenvolvimento Sistemas de controle e manutenção, Aplicativos, PWA, websites responsivos e gestão de dados"  />
-      <meta property="twitter:image" content="/ogp.png" />
+      <meta name="twitter:card" value="summary_large_image"/>
+      <meta name="twitter:title" content="StackView - Desenvolvimento Full-Stack, Design, Engenharia" />
+      <meta name="twitter:description" content="Automação, Iot e Full-Stack, Desenvolvimento Sistemas de controle e manutenção, Aplicativos, PWA, websites responsivos e gestão de dados"  />
+      <meta name="twitter:image" content="/ogp.png" />
 
 
       <meta name="theme-color" content="#000000" />
