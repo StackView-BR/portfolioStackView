@@ -28,7 +28,7 @@ function Footer() {
             <div className="follow">
                 <a className="sv">FOLLOW US</a>
                 <div className="line">
-                    <a><img
+                    <a href="https://www.behance.net/StackView"><img
                         id="be"
                         src="/icons/behance.png"
                         width="auto"
