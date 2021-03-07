@@ -12,13 +12,161 @@
         display: none;
       }
       .apareca{
-        display: "";
+        display: block;
       }
     .front{
         display: block;
         margin-left: auto;
         margin-right: auto;
         
+    }
+    
+    .header .navicon{
+      z-index: 999;
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+      background-color: white;
+      height: auto;
+      width: 70px;
+      transform: rotate(-90deg);
+     
+    }
+    .header .navicon .center{
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+    .header .navicon a{
+      font-size: xx-large;
+      -webkit-transition:  1000ms linear;
+      -ms-transition:  1000ms linear;
+      transition:  1000ms linear;
+      margin-left: 2px;
+    }
+    .header .navicon .center .stack{
+      
+        -webkit-animation: fadeins 2s; /* Safari, Chrome and Opera > 12.1 */
+           -moz-animation: fadeins 2s; /* Firefox < 16 */
+            -ms-animation: fadeins 2s; /* Internet Explorer */
+             -o-animation: fadeins 2s; /* Opera < 12.1 */
+                animation: fadeins 2s;
+    }
+    .header .navicon .center .view{
+     
+        -webkit-animation: fadeinv 2s; /* Safari, Chrome and Opera > 12.1 */
+           -moz-animation: fadeinv 2s; /* Firefox < 16 */
+            -ms-animation: fadeinv 2s; /* Internet Explorer */
+             -o-animation: fadeinv 2s; /* Opera < 12.1 */
+                animation: fadeinv 2s;
+    }
+    .collapso{
+      position: absolute;
+      top:0px;
+      left: 0;
+      bottom: 0;
+      right: 0px;
+      background-color: black;
+      width: auto;
+      height: 150vh;
+      -webkit-transition:  200ms linear;
+    -ms-transition:  200ms linear;
+    transition:  200ms linear;
+    }
+    .collapso .menu{     
+      display: block;
+      text-align: left;
+      font-family: 'Roboto', sans-serif;      
+      height: auto;    
+    }
+    .collapso .menu img{
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      padding-right: 70px;
+      text-align: center;           
+    }
+    
+    .collapso .menu .links{
+      display: block;
+      left:0;      
+      margin-left: -60px;
+      padding-top: 15vh;
+          
+    }
+    .collapso .menu .links a{
+      font-size: 5vh !important;
+
+    }
+    .collapso .menu .info{
+      
+      font-size: 2vh !important;
+      left:0;
+      width: 200px;  
+      padding-top: 4vh;   
+      margin-left: -10px;     
+    }
+    .collapso .menu .info a{
+      font-size: 3vh !important;
+    }
+    .collapso .menu .w {
+      display: block;
+      margin-top: 3vh;
+      margin-left: -10px;
+      margin-right: auto;
+    }
+    .collapso .menu .w #w{
+      
+      animation-name: buth;
+animation-delay: 2s;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+animation-fill-mode: backwards;
+background: #26D366;   
+    }
+    .collapso .menu .w #t{
+      
+      animation-name: buth;
+animation-delay: 2s;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+animation-fill-mode: backwards;
+background: #37AEF3;      
+    }
+    .collapso .menu .w img{
+      position: relative;
+      margin-left: 0;
+      margin-right: 0;
+      padding-right: 0px;
+      text-align: center;   
+      height: 10vh;
+      width:10vh;
+      padding: 0;
+      margin-left: 10px;
+     border-radius:5vh;
+    }
+    
+    .collapso .stackview{
+      background-color: white;
+      height: 100vh;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 70px;           
+    }
+    .collapso .stackview .rotate{
+      top:40%;      
+    margin: 0;
+    position: absolute;    
+    -ms-transform: translate(-25%, 50%) rotate(-90deg);
+    transform: translate(-37%, 50%) rotate(-90deg);
+    }
+    .collapso .stackview .rotate a{
+      font-size: 50px;
+
     }
   .front .stack{
     position: relative;    
@@ -103,7 +251,7 @@
   }
   .foot .contact .logo {
     padding: 0px;
-    display: flex;
+    display: none;
     justify-content: center;
   }
   .foot .contact .card {
@@ -120,7 +268,7 @@
   }
   .foot .contact .card .social{
     margin-left: 0px;
-    padding: 40px 10px 0 0;
+    padding: 10px 10px 0 0;
     display: flex;
     justify-content: space-between;
     margin-left: auto;
@@ -197,4 +345,34 @@
   .footer .rodape .made{
     padding: 10px;
   }
+
+  //// fade in view
+@keyframes fadeinv {
+  from { opacity: 0;
+    margin-top: 4vh;
+  }
+  to   { opacity: 1;
+    margin-top: -4vh;
+   }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeinv {
+  from { opacity: 0;
+    margin-top: 4vh;
+  }
+  to   { opacity: 1;
+    margin-top: -4vh;
+   }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeinv {
+  from { opacity: 0;
+    margin-top:4vh;
+  }
+  to   { opacity: 1;
+    margin-top: -4vh;
+   }
+}
 }

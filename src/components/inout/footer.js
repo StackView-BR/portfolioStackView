@@ -2,7 +2,7 @@ function Footer() {
 
     return <div className="footer">
         <div className="foot"><div className="contact">
-            <div className="logo"><img
+            <div className="suma logo"><img
                 src="/logo.png"
                 width="auto"
             /></div>
