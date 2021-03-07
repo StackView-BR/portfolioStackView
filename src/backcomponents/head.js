@@ -12,7 +12,7 @@ function Head({ title }) {
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta property="og:title" content="StackView - Desenvolvimento Full-Stack, Design, Engenharia" key="title" />
       <meta property="og:description" content="Automação, Iot e Full-Stack, Desenvolvimento Sistemas de controle e manutenção, Aplicativos, PWA, websites responsivos e gestão de dados" key="description" />
-      <meta property="og:image" content="/ogp.png" />
+      <meta property="og:image" content="/ogp.png" key="image"/>
       <meta property="og:image:type" content="image/png" />
 
       <meta name="description" content="Automação, Iot e Full-Stack, Desenvolvimento Sistemas de controle e manutenção, Aplicativos, PWA, websites responsivos e gestão de dados" />
