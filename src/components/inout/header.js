@@ -16,6 +16,7 @@ class Header extends React.Component {
       to: "i",
       to2: "i",
       rotate: "-90",
+      display: "none",
 
     };
 
@@ -61,11 +62,13 @@ class Header extends React.Component {
     if (window.pageYOffset >= window.innerHeight && window.pageYOffset <= totalHeight) {
       this.setState({
         back: "black",
+        display: "",
         flip: "white",
       })
     } else if ((window.pageYOffset >= totalHeight || window.pageYOffset <= window.innerHeight)&&!this.state.open) {
       this.setState({
         back: "rgba(0,0,0,0.1)",
+        display: "none",
         flip: "rgba(0,0,0,0.1)",
       })
     }
@@ -83,7 +86,7 @@ class Header extends React.Component {
         <Head title="StackView" />
         <div className="header" style={{ backgroundColor: this.state.back }} position="fixed">
 
-          <div className="logoname"><a className="stack">S</a><a className="view">V</a></div>
+          <div className="logoname"><a className="stack">s</a><a style={{ display: this.state.display }} className="sv s">s</a><a style={{ display: this.state.display }} className="sv t">t</a><a style={{ display: this.state.display }} className="sv a">a</a><a style={{ display: this.state.display }} className="sv c">c</a><a style={{ display: this.state.display }} className="sv k">k</a><a className="view">v</a><a style={{ display: this.state.display }} className="sv v">v</a><a style={{ display: this.state.display }} className="sv i">i</a><a style={{ display: this.state.display }} className="sv e">e</a><a style={{ display: this.state.display }} className="sv w">w</a></div>
           <div className="menu suma">
             <Link href="https://www.behance.net/StackView"><Button><a>Portfolio</a></Button></Link>
             <Link href="" ><Button><a>Developers</a></Button></Link>

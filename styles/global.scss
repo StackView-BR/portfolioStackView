@@ -103,7 +103,75 @@ p,a {
   width: fit-content;
   padding: 20px 0px 0px 20px;
 }
-
+.header .logoname .s{
+  margin-left: -16px;
+}
+.header .logoname .v{
+  margin-left: -16px;
+}
+.header .logoname .t{
+  margin-left: -16px;
+  opacity: 0;
+  animation-name: letter;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.header .logoname .a{
+  margin-left: -16px;
+  opacity: 0;
+  animation-name: letter;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.header .logoname .c{
+  margin-left: -16px;
+  opacity: 0;
+  animation-name: letter;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.header .logoname .k{
+  margin-left: -16px;
+  opacity: 0;
+  animation-name: letter;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.header .logoname .i{
+  margin-left: -16px;
+  opacity: 0;
+  animation-name: letter;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.header .logoname .e{
+  margin-left: -16px;
+  opacity: 0;
+  animation-name: letter;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.header .logoname .w{
+  margin-left: -16px;
+  opacity: 0;
+  animation-name: letter;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
 
 //front
 .front{
@@ -612,6 +680,43 @@ animation-fill-mode: forwards;
 50% { -webkit-transform: rotateZ(0deg); transform:rotateZ(0deg); }
 100% { -webkit-transform: rotateZ(-1080deg); transform:rotateZ(-1080deg); } }
 
+@keyframes letter {
+  0%{
+    margin-left: -16px;
+    opacity: 0;
+
+  }
+  100%  { 
+    margin-left: 0;
+    opacity: 1;
+   }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes letter {
+  0%{
+    margin-left: -16px;
+    opacity: 0;
+
+  }
+  100%  { 
+    margin-left: 0;
+    opacity: 1;
+   }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes letter {
+  0%{
+    margin-left: -16px;
+    opacity: 0;
+
+  }
+  100%  { 
+    margin-left: 0;
+    opacity: 1;
+   }
+}
 .load{
   position:fixed;
     padding:0;
