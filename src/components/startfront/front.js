@@ -1,6 +1,34 @@
-function Front() {
+import React, {useEffect, useState} from 'react';
 
-    return <div className="front">
+class Front extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            offsetY:"0",    
+    
+        };    
+        this.handleScroll = this.handleScroll.bind(this);    
+      }
+      componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll);
+      }
+    
+      componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
+      }
+      handleScroll(event) {
+        
+        this.setState({
+            offsetY: window.pageYOffset*0.5 +"px",
+        });
+    
+      };
+
+render(){
+
+    return <div className="front parallax" style={{backgroundPositionY:this.state.offsetY}}>
+       
         <div className="icon">
         
             <img
@@ -25,8 +53,10 @@ function Front() {
             <div className="m" ><a>data management</a></div>
         </div>
     </div>
+}
+    
 
 
 }
 
-export default Front
+export default Front;

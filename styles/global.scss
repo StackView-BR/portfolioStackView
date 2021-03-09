@@ -40,8 +40,8 @@ body {
   font-family: "Icon Font", "Arial", sans-serif !important;
   color:$our-blue;
 }
-b,
-p,a {
+
+a {
   font-family: "Custom Font", "Arial", sans-serif ;
   color: white;
   font-size: x-large;  
@@ -177,8 +177,10 @@ p,a {
 .front{
   width: 100%;
   height: 100vh;
-  background: black;
+  background-image: url(/parallax.gif);
+  background-size: 100% auto;
 }
+
 .front .stack{
   padding-top: 25vh;
   margin-left: 16vw;
@@ -717,6 +719,60 @@ animation-fill-mode: forwards;
     opacity: 1;
    }
 }
+.viewpage{
+  font-family: "Roboto", "Arial", sans-serif ;
+  color:$our-blue;
+  display: flex;
+ padding-left: 50px;
+  height: 100vh;
+  width: auto;
+}
+.viewpage .gif{
+  width: 50%;
+  padding-top: 25%;
+  
+}
+.viewpage .text{
+ width: 50%;
+ margin-top: 10vh;
+}
+.viewpage .text .tag{
+  color: #131A1F ;
+  font-size: 1.4vw;
+  transition: all 1s ease-in-out;  
+ }
+
+ .viewpage .text .title{
+  font-size: 3vw;
+  transition: all 0.5s ease-in-out;
+ }
+.noshow{
+  opacity: 0;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.notv{
+  opacity: 0;
+  margin-top: 50px;
+}
+
+ .viewpage .text .cont{
+  width:70%;
+  font-size: 1.4vw;
+  transition: all 0.5s ease-in-out;
+ }
+
+ .viewpage .gif a{
+   margin-left: 20vw;
+
+   font-size: 4vw;
+ }
+ .viewpage .gif .orange{
+  width: 50%;
+  height: 100px;
+  background: linear-gradient( 45deg,  #FF6600 30%, #F16436 100%);
+}
+
 .load{
   position:fixed;
     padding:0;
@@ -729,4 +785,44 @@ animation-fill-mode: forwards;
     height: 100%;
     
   background-color: #ff6600;
+}
+
+@keyframes show {
+  0%{
+    margin-left: 10px;
+    margin-top: 10px;
+    opacity: 0;
+  }
+  100%  { 
+    margin-left: 0;
+    opacity: 1;
+   }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes show {
+  0%{
+    margin-left: 10px;
+    margin-top: 10px;
+    opacity: 0;
+
+  }
+  100%  { 
+    margin-left: 0;
+    opacity: 1;
+   }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes show {
+  0%{
+    margin-left: 10px;
+    margin-top: 10px;
+    opacity: 0;
+
+  }
+  100%  { 
+    margin-left: 0;
+    opacity: 1;
+   }
 }

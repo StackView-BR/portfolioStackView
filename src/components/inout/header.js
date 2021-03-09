@@ -58,7 +58,6 @@ class Header extends React.Component {
   }
   handleScroll(event) {
     let totalHeight = document.body.scrollHeight - window.innerHeight;
-    console.log(window.innerHeight);
     if (window.pageYOffset >= window.innerHeight && window.pageYOffset <= totalHeight) {
       this.setState({
         back: "black",
