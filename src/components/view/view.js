@@ -35,7 +35,7 @@ class View extends React.Component {
                 }
             );
         }
-        if(window.pageYOffset>this.myRef.current.offsetTop-100){
+        if(window.pageYOffset>this.myRef.current.offsetTop-200){
             
           this.setState(
               {

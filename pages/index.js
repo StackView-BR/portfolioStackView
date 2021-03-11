@@ -2,6 +2,7 @@ import Header from '../src/components/inout/header';
 import Footer from '../src/components/inout/footer';
 import Front from '../src/components/startfront/front';
 import View from '../src/components/view/view';
+import First from '../src/components/view/first';
 
 
 function Home(){
@@ -17,7 +18,7 @@ function Home(){
         
         <Header />
         <Front/>
-        <div className="stackdesc" style={{height: "70px", width:"100%", backgroundColor:"grey"}}></div>
+        <First/>
         <View data={data} order="1" order2="2" color3="white" color1="white" color2="#ff6600" color="linear-gradient( 45deg,  #0d2f46 30%, #003153 100%)" />
         <View data={data} order="2" order2="1" color3="white" color1="white" color2="#003153" color="linear-gradient( 45deg,  #FF6600 30%, #F16436 100%)" />
         <View data={data} order="1" order2="2" color3="black" color1="#003153" color2="#ff6600" color="linear-gradient( 45deg,  #cccccc 30%, #ffffff 100%)" />

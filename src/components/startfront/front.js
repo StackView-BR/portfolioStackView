@@ -50,7 +50,7 @@ render(){
         <div className="fdd">
             <div className="f"><a>full stack</a></div>
             <div className="d"><a>design</a></div>
-            <div className="m" ><a>data management</a></div>
+            <div className="m" ><a>Engineering</a></div>
         </div>
     </div>
 }

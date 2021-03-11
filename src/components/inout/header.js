@@ -108,7 +108,7 @@ class Header extends React.Component {
             <a>Phone</a>: <br /> +5517988309968<br /><br />
             <a>Email</a>: <br />sv@stackview.com.br<br /><br />
                 <a>Address</a>:  <br />Av. João Naves de Ávila, 2121<br /> Santa Mônica, Uberlândia - MG, 38408-100, Brasil
-                <div className="w"><a ><img
+                <div className="w"><a href="https://api.whatsapp.com/send?phone=5517988309968"><img
                 id="w"
                 src="/icons/whats.png"
                 width="auto"

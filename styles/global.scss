@@ -44,9 +44,12 @@ body {
 a {
   font-family: "Custom Font", "Arial", sans-serif ;
   color: white;
-  font-size: x-large;  
+  font-size: x-large;
 }
-
+a:hover, a:focus, a:active {
+  background-color: transparent;
+  text-decoration: none; 
+}
 
 ::-webkit-scrollbar {
   width: 0px;
@@ -825,4 +828,31 @@ animation-fill-mode: forwards;
     margin-left: 0;
     opacity: 1;
    }
+}
+
+.fview{
+  background-color: black;
+  height: 50vh;
+  display: block;
+  justify-content: center;
+  text-align: center;
+
+}
+.fview .sv{
+  
+  font-size: 5vw;
+  background: -webkit-linear-gradient(#131A1F, #67686A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fview .icons{
+  display: flex;
+  margin-top: 10vh;
+  justify-content: center;
+
+}
+.fview .icons img{
+  margin: 2%;
+  width: 10%;
+  height: fit-content;
 }
