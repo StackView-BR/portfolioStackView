@@ -53,9 +53,10 @@ class First extends React.Component {
             src="/icons/d.png"
             width=""
         />
-           <div className="text"></div>   
       
       </div>
+      <div className="text">Praticamos engenharia de software, seja com foco em 
+design, gestão de dados automação e controle de processos</div>   
   </div>;
     }
   }

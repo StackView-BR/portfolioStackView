@@ -832,7 +832,7 @@ animation-fill-mode: forwards;
 
 .fview{
   background-color: black;
-  height: 50vh;
+  height: fit-content;
   display: block;
   justify-content: center;
   text-align: center;
@@ -847,12 +847,23 @@ animation-fill-mode: forwards;
 }
 .fview .icons{
   display: flex;
-  margin-top: 10vh;
+  margin-top: 3vh;
   justify-content: center;
 
 }
 .fview .icons img{
   margin: 2%;
-  width: 10%;
+  width: 8%;
   height: fit-content;
+}
+.fview .text{
+  display: block;
+  font-size: 1.6vw;
+  justify-content: center;
+  text-align: center;
+  margin: 3%;
+  width: auto;
+  color: white;
+  height: fit-content;
+  font-family: 'Roboto', sans-serif;  
 }

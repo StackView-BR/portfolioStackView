@@ -25,6 +25,15 @@ class Header extends React.Component {
 
   }
   
+  handleContact =() => {
+    console.log("clique");
+    window.scroll({
+      bottom: document.body.scrollHeight, // or document.scrollingElement || document.body
+    left: 0,
+    behavior: 'smooth'
+    });
+  }
+
   handleClick = (e) =>  {
     if(this.state.open){
       this.setState({
@@ -89,7 +98,7 @@ class Header extends React.Component {
           <div className="menu suma">
             <Link href="https://www.behance.net/StackView"><Button><a>Portfolio</a></Button></Link>
             <Link href="" ><Button><a>Developers</a></Button></Link>
-            <Link href="" ><Button><a>Contact Us</a></Button></Link>
+            <Link href=""  ><Button onClick={this.handleContact}><a>Contact Us</a></Button></Link>
 
           </div>
 
@@ -103,7 +112,7 @@ class Header extends React.Component {
         />
         <div className="links"><Link href="https://www.behance.net/StackView" ><Button><a>Portfolio</a></Button></Link> <br/>
             <Link href="" ><Button><a>Developers</a></Button></Link><br/>
-            <Link href="" ><Button><a>Contact Us</a></Button></Link></div><br/>
+            <Link href="" onClick={this.handleContact} ><Button><a>Contact Us</a></Button></Link></div><br/>
             <div className="info">
             <a>Phone</a>: <br /> +5517988309968<br /><br />
             <a>Email</a>: <br />sv@stackview.com.br<br /><br />
