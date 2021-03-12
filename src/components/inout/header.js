@@ -2,6 +2,7 @@ import Head from '../../backcomponents/head';
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Button from '@material-ui/core/Button';
+import * as Scroll from 'react-scroll';
 
 class Header extends React.Component {
   
@@ -19,19 +20,18 @@ class Header extends React.Component {
       display: "none",
 
     };
-
+    
     
     this.handleScroll = this.handleScroll.bind(this);
 
   }
-  
+ 
+
   handleContact =() => {
     console.log("clique");
-    window.scroll({
-      bottom: document.body.scrollHeight, // or document.scrollingElement || document.body
-    left: 0,
-    behavior: 'smooth'
-    });
+    const scroll    = Scroll.animateScroll;
+      scroll.scrollToBottom();
+   
   }
 
   handleClick = (e) =>  {

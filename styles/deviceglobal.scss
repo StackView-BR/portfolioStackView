@@ -398,11 +398,13 @@ background: #37AEF3;
  .viewpage .text .title{
   
   font-size: 4vh;
+  margin-right: 10px;
  }
 
  .viewpage .text .cont{
-  width:100%;
+  width:auto ;
   font-size: 2.5vh;
+  margin-right: 20px;
 }
 .fview .sv{
   font-size: 8vw;
@@ -416,5 +418,19 @@ background: #37AEF3;
   display: block;
   font-size: 2.5vh;
 }
+.fview .icons #icon{
+  margin-top: -25%;
+  width: 100%;
+  opacity: 20%;
+}
 
+.noshow{
+  opacity: 100;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+.notv{
+  opacity: 100;
+  margin-top: 0px;
+}
 }

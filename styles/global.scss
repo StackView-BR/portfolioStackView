@@ -760,9 +760,10 @@ animation-fill-mode: forwards;
 }
 
  .viewpage .text .cont{
-  width:70%;
+  width:80%;
   font-size: 1.4vw;
   transition: all 0.5s ease-in-out;
+  text-align: justify;
  }
 
  .viewpage .gif a{
@@ -841,7 +842,7 @@ animation-fill-mode: forwards;
 .fview .sv{
   
   font-size: 5vw;
-  background: -webkit-linear-gradient(#131A1F, #67686A);
+  background: -webkit-linear-gradient(#373435, white);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -861,9 +862,23 @@ animation-fill-mode: forwards;
   font-size: 1.6vw;
   justify-content: center;
   text-align: center;
-  margin: 3%;
+  margin: 5%;
   width: auto;
   color: white;
   height: fit-content;
   font-family: 'Roboto', sans-serif;  
+}
+
+.fview .icons #icon{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  margin-top: -5%;
+  width: 40%;
+  height: auto;
+  filter:   drop-shadow(5px 5px 100px gray) grayscale(100%) contrast(175%) brightness(150%);
+  text-align: center;
+  opacity: 10%;
 }

@@ -49,7 +49,7 @@ render(){
         
         <div className="fdd">
             <div className="f"><a>development</a></div>
-            <div className="d"><a>design</a></div>
+            <div className="d"><a>data management</a></div>
             <div className="m" ><a>Engineering</a></div>
         </div>
     </div>
