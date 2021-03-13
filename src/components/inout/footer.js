@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 function Footer() {
 
     return <div className="footer">
@@ -7,20 +9,27 @@ function Footer() {
                 width="auto"
             /></div>
 
-            <div className="card"> <div className="social"><div><a>Phone</a>: <br /> +5517988309968 </div><div className="w"><a ><img
+            <div className="card"> <div className="social"><div><a>Phone</a>: <br /> +5517988309968 </div><div className="w"><a >
+                
+            <Link href="https://api.whatsapp.com/send?phone=5517988309968"><img
+                href="https://api.whatsapp.com/send?phone=5517988309968"
                 id="w"
                 src="/icons/whats.png"
                 width="auto"
+                
+            />
+            </Link></a>
 
-            /></a>
-                <a className="t"><img
+                <a className="t"><Link href="https://t.me/stackviewbr"><img
                     id="t"
                     src="/icons/tel.png"
                     width="auto"
 
-                /></a></div></div>
+                /></Link></a>
+
+                </div></div>
                 <br /><br /><br />
-                <a>Email</a>: <br />sv@stackview.com.br<br /><br />
+                <a>Email</a>: <br />stackviewbr@gmail.com<br /><br />
                 <a>Address</a>:  <br />Av. João Naves de Ávila, 2121<br /> Santa Mônica, Uberlândia - MG, 38408-100, Brasil</div>
 
 
@@ -28,37 +37,37 @@ function Footer() {
             <div className="follow">
                 <a className="sv">FOLLOW US</a>
                 <div className="line">
-                    <a href="https://www.behance.net/StackView"><img
+                    <a ><Link href="https://www.behance.net/StackView"><img
                         id="be"
                         src="/icons/behance.png"
                         width="auto"
 
-                    /></a>
-                    <a><img
+                    /></Link></a>
+                    <a><Link href="https://www.instagram.com/g_lisbao/"><img
                         id="insta"
                         src="/icons/insta.png"
                         width="auto"
 
-                    /></a>
-                    <a><img
+                    /></Link></a>
+                    <a><Link href="https://github.com/StackView-BR"><img
                         id="git"
                         src="/icons/git.png"
                         width="auto"
 
-                    /></a>
-                    <a><img
+                    /></Link></a>
+                    <a><Link href="https://www.facebook.com/lisbao.gabriel/"><img
                         id="face"
                         src="/icons/face.png"
                         width="auto"
 
-                    /></a>
+                    /></Link></a>
                     
-                    <a><img
+                    <a><Link href="https://www.linkedin.com/in/gabrielelisbao/"><img
                         id="in"
                         src="/icons/in.png"
                         width="auto"
 
-                    /></a>
+                    /></Link></a>
 
 
                 </div>
