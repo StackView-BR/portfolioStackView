@@ -66,7 +66,7 @@ function Footer() {
                         id="in"
                         src="/icons/in.png"
                         width="auto"
-
+                        
                     /></Link></a>
 
 

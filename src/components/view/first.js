@@ -27,7 +27,7 @@ class First extends React.Component {
   
     render() {
       return <div className="fview" ref={this.myRef} >
-          <a className="sv"> we are fullstack developers</a>
+          <a className="sv"> we are developers</a>
           
           <div className="icons">
           <img

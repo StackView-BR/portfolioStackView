@@ -18,7 +18,8 @@ function Home(){
         tag: "Data Management",
         title1: "Soluções para",
         title2: "gestão de dados e gerenciamento na nuvem",
-        desc: <></> ,
+        desc: <>Nossos <strong>softwares</strong> empregam algoritmos e funcionalidades para lidar com grandes <strong>volumes de dados</strong>, permitem o rápido acesso e organização de forma otimizada. 
+        Utilizamos servidores e estrutura de banco de dados que melhor se adequem ao seu problema, de forma a entregar desempenho com <strong>segurança dos dados</strong>. </> ,
         more: "",
     }
 
