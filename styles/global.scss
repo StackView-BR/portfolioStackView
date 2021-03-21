@@ -67,7 +67,33 @@ background-color: black;
 background:black;
 background:linear-gradient(135deg,$our-blue 0,#0d2f46 50%,$our-orange 50%,#F16436 100%);
 }
-
+.fakebar{
+  position: fixed;
+  display: inline-block;
+  margin: 0;
+  align-items: center;
+justify-content: center;
+  right: -3%;
+  top: 50%;
+  -ms-transform:  rotate(-90deg);
+  transform:  rotate(-90deg);
+}
+.progress{
+  margin-top: 10px;
+  margin-right: 10px;
+  align-items: center;
+  float: left;
+  display: block;
+  width: 65px;
+  height: 2px;
+}
+.bar {
+  display: inline-block;
+}
+.bar a{
+  color: black;
+  text-decoration: none;
+}
 
 .header{
   top: 0;
@@ -897,4 +923,3 @@ animation-fill-mode: forwards;
   align-items: center;
 
 }
-.stackdesc{}
