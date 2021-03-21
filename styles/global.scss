@@ -50,32 +50,25 @@ a:hover, a:focus, a:active {
   background-color: transparent;
   text-decoration: none; 
 }
+::-webkit-scrollbar-track
+{
+-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+background-color: black;
 
-::-webkit-scrollbar {
-  width: 0px;
+}
+::-webkit-scrollbar
+{
+width: 6px;
+
+background-color: black;
+}
+::-webkit-scrollbar-thumb
+{
+background:black;
+background:linear-gradient(135deg,$our-blue 0,#0d2f46 50%,$our-orange 50%,#F16436 100%);
 }
 
-.bar {
-  top: 0;
-  width: 6px;
-  position: fixed;
-  height: 100%;
-  right: 0;
-  background-color: white;
-}
-.fakebar {
-  top: 0;
-  width: 6px;
-  position: fixed;
-  height: 150%;
-  right: 0;
-  background-color: white;
-}
-.progress {
-  width: 100%;
-  height: 50%;
-  background-color: black;
-}
+
 .header{
   top: 0;
   left: 0;
@@ -101,9 +94,23 @@ a:hover, a:focus, a:active {
 }
 .header .menu Button{ 
   padding: 0px 0px 0px 50px;
+    
+
 }
+.header .menu Button a {
+
+
+
+}
+.header .menu Button a:hover {
+  background: -webkit-linear-gradient(135deg,$our-blue 0,#0d2f46 50%,$our-orange 50%,#F16436 100%);
+  -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent;
+  }
 .header .logoname{ 
   width: fit-content;
+  text-decoration:none; 
+  font-style: normal;
   padding: 20px 0px 0px 20px;
 }
 .header .logoname .s{
@@ -883,3 +890,11 @@ animation-fill-mode: forwards;
   text-align: center;
   opacity: 10%;
 }
+
+.stackdesc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.stackdesc{}

@@ -94,10 +94,10 @@ class Header extends React.Component {
         <Head title="StackView" />
         <div className="header" style={{ backgroundColor: this.state.back }} position="fixed">
 
-          <div className="logoname"><a className="stack">s</a><a style={{ display: this.state.display }} className="sv s">s</a><a style={{ display: this.state.display }} className="sv t">t</a><a style={{ display: this.state.display }} className="sv a">a</a><a style={{ display: this.state.display }} className="sv c">c</a><a style={{ display: this.state.display }} className="sv k">k</a><a className="view">v</a><a style={{ display: this.state.display }} className="sv v">v</a><a style={{ display: this.state.display }} className="sv i">i</a><a style={{ display: this.state.display }} className="sv e">e</a><a style={{ display: this.state.display }} className="sv w">w</a></div>
+          <a className="logoname" href='/'><a className="stack">s</a><a style={{ display: this.state.display }} className="sv s">s</a><a style={{ display: this.state.display }} className="sv t">t</a><a style={{ display: this.state.display }} className="sv a">a</a><a style={{ display: this.state.display }} className="sv c">c</a><a style={{ display: this.state.display }} className="sv k">k</a><a className="view">v</a><a style={{ display: this.state.display }} className="sv v">v</a><a style={{ display: this.state.display }} className="sv i">i</a><a style={{ display: this.state.display }} className="sv e">e</a><a style={{ display: this.state.display }} className="sv w">w</a></a>
           <div className="menu suma">
             <Link href="https://www.behance.net/StackView"><Button><a>Portfolio</a></Button></Link>
-            <Link href="" ><Button><a>Developers</a></Button></Link>
+            <Link href="/we" ><Button><a>Developers</a></Button></Link>
             <Link href=""  ><Button onClick={this.handleContact}><a>Contact Us</a></Button></Link>
 
           </div>
@@ -111,7 +111,7 @@ class Header extends React.Component {
             height="70px"
         />
         <div className="links"><Link href="https://www.behance.net/StackView" ><Button><a>Portfolio</a></Button></Link> <br/>
-            <Link href="" ><Button><a>Developers</a></Button></Link><br/>
+            <Link href="/we" ><Button><a>Developers</a></Button></Link><br/>
             <Link href="" onClick={this.handleContact} ><Button><a>Contact Us</a></Button></Link></div><br/>
             <div className="info">
             <a>Phone</a>: <br /> +5517988309968<br /><br />
