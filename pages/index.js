@@ -27,7 +27,8 @@ function Home(){
         tag: "Engineering",
         title1: "Soluções em",
         title2: "automação de processos, manutenção e produtividade",
-        desc: <><strong></strong></> ,
+        desc: <>A Indústria 4.0 representa o avanço da transformação digital sobre os pilares produtivos das organizações, modificando por completo a perspectiva operacional, é uma tendência que cresce a cada ano. Nossas soluções impulsionam o desenvolvimento tecnológico, e são a porta de entrada para implementação de modernos sistemas de produção e manutenção. 
+        <strong></strong></> ,
         more: "",
     }
 
