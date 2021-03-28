@@ -33,7 +33,7 @@ function Head({ title }) {
       <meta name="apple-mobile-web-app-status-bar-style" content="#000000" />
 
       <meta property="og:locale" content="pt-br" />
-      <meta http-equiv="Content-Language" content="pt-br" />
+      <meta httpEquiv="Content-Language" content="pt-br" />
       <link
         rel="preload"
         href="/fonts/REZ.woff"
@@ -48,6 +48,11 @@ function Head({ title }) {
         type="font/woff"
         crossOrigin=""
       />
+      <link rel="preload" as="image" href="/disk.png"/>
+      <link rel="preload" as="image" href="/nodisk.png"/>
+      <link rel="preload" as="image" href="/parallax.gif"/>
+
+
       <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'></link>
     </NextHead >
   );
