@@ -1,5 +1,6 @@
 {
     "theme_color": "#000000",
+    "name":"StackView",
     "background_color": "#ffff",
     "display": "standalone",
     "orientation": "portrait",
@@ -9,6 +10,12 @@
     "short_name": "StackView",
     "description": "Automação, Iot e Full-Stack, Desenvolvimento Sistemas de controle e manutenção, Aplicativos, PWA, websites responsivos e gestão de dados",
     "icons": [
+      {
+        "src": "/maskable_icon.png",
+        "sizes": "196x196",
+        "type": "image/png",
+        "purpose": "any maskable"
+      },
       {
         "src": "/icon.png",
         "sizes": "192x192",
