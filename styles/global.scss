@@ -86,9 +86,11 @@ justify-content: center;
   display: block;
   width: 65px;
   height: 2px;
+
 }
 .bar {
   display: inline-block;
+
 }
 .bar a{
   color: black;
@@ -801,8 +803,21 @@ animation-fill-mode: forwards;
   position: relative;
   width: 50%;
   padding: 0;
-  
+
  } 
+ .viewpage .gif .rotator{
+  margin-top: -28% !important;
+  animation: rotation 1s infinite linear;
+  width: 100px;
+ } 
+ @keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
  .viewpage .gif .realgif{
   width: 80.6%;
   height: 80.6%;
@@ -812,7 +827,7 @@ animation-fill-mode: forwards;
   transform: translate(-50%, -50%);
   background:black;
  } 
- .viewpage .gif a{
+ .viewpage .gif .above{
    position: absolute;
    float: right;
    top: 80vh;
@@ -830,17 +845,27 @@ animation-fill-mode: forwards;
   height: 0;
   border-bottom: 20px solid white;
   border-right: 2.3vw solid transparent;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-delay: 0.5s;
+  transition-timing-function: ease-in-out;
+
 }
 .viewpage .gif .orange{
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
-
-  position: absolute;
+  position: relative;
   top: 80vh;
-  left: 20%;
+  left: -30%;
   transform: translate(-50%, -80%);
-  width: 150%;
+  width: 250%;
   height: 80px;  
-  background: linear-gradient( 45deg,  #FF6600 80%, #F16436 100%);
+  transition: all 0.5s ease-in-out;
+
+}
+.range{
+  width: 0 !important;
+  
+ border-bottom: 0 !important;
 }
 .load{
   position:fixed;

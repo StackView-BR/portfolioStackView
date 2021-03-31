@@ -5,7 +5,9 @@ class View extends React.Component {
       super(props);
       this.state = {
         visibility:"noshow", 
-        tv:"notv"   
+        tv:"notv",
+        oshow:"range"
+
 
     };    
       this.myRef = React.createRef();
@@ -25,13 +27,15 @@ class View extends React.Component {
             
             this.setState(
                 {
-                  visibility: ""
+                  visibility: "",
+                  oshow:""
                 }
             );
         }else{
             this.setState(
                 {
-                  visibility: "noshow"
+                  visibility: "noshow",
+                  oshow:"range"
                 }
             );
         }
@@ -39,7 +43,8 @@ class View extends React.Component {
             
           this.setState(
               {
-                tv: ""
+                tv: "",
+                
               }
           );
       }else{
@@ -59,7 +64,8 @@ class View extends React.Component {
       <div className={"title " + this.state.visibility} ><b><b style={{color: this.props.color1}}>{Object.values(this.props.data)[1]}</b><br/><b style={{color: this.props.color2}}>{Object.values(this.props.data)[2]} </b></b></div><br/>
 <div className={"cont " + this.state.tv} style={{color:this.props.color3}}>{Object.values(this.props.data)[3]} </div>
       </div>
-      <div className="gif" style={{order: this.props.order}}> <div className="realgif"></div> {Object.values(this.props.data)[4]}</div>
+      <div className="gif" style={{order: this.props.order}}> <div className="realgif"></div> 
+      {Object.values(this.props.data)[4]} <div className={"white " + this.state.oshow}></div><div className={"orange " + this.state.oshow} style={{background: this.props.colororange, left:this.props.left}}></div></div>
   </div>;
     }
   }

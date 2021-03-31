@@ -137,15 +137,15 @@ class Header extends React.Component {
             </div>
             <div className="stackview"><div className="rotate"><a className="stack">stack</a><a className="view">view</a></div></div>
           </div>
-
-        </div>
-
-        <div className="fakebar">
+<div className="fakebar">
         <div className="progress" style={{background: "linear-gradient(90deg, white 0,  white "+ this.state.progress +",black "+ this.state.progress +",black 100%)"}}></div>
         <div className="bar">
           <Link href="" onClick={this.handleUp}><a >Scroll Up</a></Link>
         </div></div>
 
+        </div>
+
+        
       </div>
     );
   }
