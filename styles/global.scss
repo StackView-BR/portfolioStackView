@@ -825,9 +825,7 @@ animation-fill-mode: forwards;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url(/parallax.gif);
-  background-position: center;
-  background-repeat: 1;
+  background: white;
  } 
  .viewpage .gif .above{
    position: absolute;
