@@ -1,7 +1,7 @@
 {
     "theme_color": "#000000",
     "name":"StackView",
-    "background_color": "#ffff",
+    "background_color": "#003153",
     "display": "standalone",
     "orientation": "portrait",
     "scope": "/",
