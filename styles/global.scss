@@ -825,7 +825,9 @@ animation-fill-mode: forwards;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background:white;
+  background-image: url(/parallax.gif);
+  background-position: center;
+  background-repeat: 1;
  } 
  .viewpage .gif .above{
    position: absolute;
@@ -844,7 +846,7 @@ animation-fill-mode: forwards;
   transform: translate(-104%, -420%);
   width: 0;
   height: 0;
-  border-bottom: 20px solid #ffffff;
+  border-bottom: 20px solid #9b9b9b;
   border-right: 2.3vw solid transparent;
   transition-property: all;
   transition-duration: 0.5s;
@@ -978,5 +980,14 @@ animation-fill-mode: forwards;
   display: flex;
   justify-content: center;
   align-items: center;
+
+}
+.clientes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 100%;
+  background: #131A1F;
 
 }
