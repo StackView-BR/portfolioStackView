@@ -763,11 +763,7 @@ animation-fill-mode: forwards;
   height: 100vh;
   width: auto;
 }
-.viewpage .gif{
-  width: 50%;
-  padding-top: 25%;
-  
-}
+
 .viewpage .text{
  width: 50%;
  margin-top: 10vh;
@@ -800,17 +796,52 @@ animation-fill-mode: forwards;
   text-align: justify;
  }
 
- .viewpage .gif a{
-   margin-left: 20vw;
 
-   font-size: 4vw;
- }
- .viewpage .gif .orange{
+ .viewpage .gif{
+  position: relative;
   width: 50%;
-  height: 100px;
-  background: linear-gradient( 45deg,  #FF6600 30%, #F16436 100%);
+  padding: 0;
+  
+ } 
+ .viewpage .gif .realgif{
+  width: 80.6%;
+  height: 80.6%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background:black;
+ } 
+ .viewpage .gif a{
+   position: absolute;
+   float: right;
+   top: 80vh;
+   transform: translate(-10%, -180%);
+   right: 10%;
+   font-size: 400%;
+ }
+ 
+.viewpage .gif .white{
+  position: absolute;
+  top: 80vh;
+  right: 0;  
+  transform: translate(-103%, -420%);
+  width: 0;
+  height: 0;
+  border-bottom: 20px solid white;
+  border-right: 2.3vw solid transparent;
 }
+.viewpage .gif .orange{
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
 
+  position: absolute;
+  top: 80vh;
+  left: 20%;
+  transform: translate(-50%, -80%);
+  width: 150%;
+  height: 80px;  
+  background: linear-gradient( 45deg,  #FF6600 80%, #F16436 100%);
+}
 .load{
   position:fixed;
     padding:0;

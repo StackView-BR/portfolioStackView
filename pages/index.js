@@ -12,7 +12,7 @@ function Home(){
         title2: "o melhor desempenho, UI/UX Design",
         desc: <>Desenvolvemos utilizando os frameworks e/ou linguagens que entregam o <strong>máximo desempenho</strong> e permitem uma melhor customização pensando na <strong>usuabilidade e experiencia do usuario</strong>, dentro dos prazos estipulados.
          <br/>Seja no <strong>desenvolvimento web, mobile ou programas para os diferentes sistemas</strong>, nos preocupamos em entregar o melhor para você ou sua empresa.</> ,
-        more: "",
+        more:<>  <a className="sv">sv</a>  <div className="white"></div><div className="orange"></div></>,
     }
     const data2 = {
         tag: "Data Management",

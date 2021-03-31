@@ -59,7 +59,7 @@ class View extends React.Component {
       <div className={"title " + this.state.visibility} ><b><b style={{color: this.props.color1}}>{Object.values(this.props.data)[1]}</b><br/><b style={{color: this.props.color2}}>{Object.values(this.props.data)[2]} </b></b></div><br/>
 <div className={"cont " + this.state.tv} style={{color:this.props.color3}}>{Object.values(this.props.data)[3]} </div>
       </div>
-      <div className="gif" style={{order: this.props.order}}> <a className="sv">sv</a> <div className="orange"></div></div>
+      <div className="gif" style={{order: this.props.order}}> <div className="realgif"></div> {Object.values(this.props.data)[4]}</div>
   </div>;
     }
   }

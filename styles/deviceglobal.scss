@@ -383,11 +383,32 @@ background: #37AEF3;
 }
 .viewpage .gif{
   width: 100%;
+  height: 40%;
+  position: relative;
   padding: 0;
 }
+.viewpage .gif .realgif{
+  width: 100%;
+  height: 100%;
+  margin-top: -10px;
+
+ }
+ .viewpage .gif a{
+display: none;
+}
+
+.viewpage .gif .white{
+  display: none;
+
+}
+.viewpage .gif .orange{
+  display: none;
+
+}
 .viewpage .text{
-  padding: 10px 0 10px 10px;
- width: auto;
+  height: 60%;
+  padding: 10px 0 0px 10px;
+ width: fit-content;
  margin-top: 0vh;
 }
 .viewpage .text .tag{
@@ -402,7 +423,7 @@ background: #37AEF3;
  }
 
  .viewpage .text .cont{
-  width:auto ;
+  width:fit-content ;
   font-size: 2.5vh;
   margin-right: 20px;
 }
