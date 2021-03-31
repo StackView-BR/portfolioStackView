@@ -50,7 +50,7 @@ function Home(){
         <Front/>
         <First/>
         <View data={data1} left="-30%" colororange=" linear-gradient( 45deg,  #FF6600 80%, #F16436 100%)" order="1" order2="2" color3="white" color1="white" color2="#ff6600" color="linear-gradient( 45deg,  #0d2f46 30%, #003153 100%)" />
-        <View data={data2} left="-300%"  colororange=" linear-gradient( 45deg, #FF6600 70%, #0d2f46 70%, #003153 100%)" order="2" order2="1" color3="white" color1="white" color2="#003153" color="linear-gradient( 45deg,  #FF6600 30%, #F16436 100%)" />
+        <View data={data2} left="-30%"  colororange=" linear-gradient( 45deg, #003153 70%, #FF6600 70%, #FF6600 100%)" order="2" order2="1" color3="white" color1="white" color2="#003153" color="linear-gradient( 45deg,  #FF6600 30%, #F16436 100%)" />
         <View data={data3} left="-30%" colororange=" linear-gradient( 45deg,  #FF6600 80%, #003153 80%)" order="1" order2="2" color3="black" color1="#003153" color2="#ff6600" color="linear-gradient( 45deg,  #cccccc 30%, #ffffff 100%)" />
         <div className="stackdesc" style={{height: "70px", width:"100%", backgroundColor:"grey"}}></div>
 
