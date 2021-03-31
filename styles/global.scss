@@ -981,11 +981,54 @@ animation-fill-mode: forwards;
 
 }
 .clientes{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 300px;
-  width: 100%;
-  background: #131A1F;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
 
+  display: block;
+  text-align: center;
+  height: fit-content;
+  width: 100%;
+  padding-top: 30px;
+  background:linear-gradient(45deg, $our-orange 25%, black 25%);;
+}
+.clientes .orange{
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+
+  position: absolute;
+  margin-top: -30px;
+  background: linear-gradient(135deg, $our-blue 30%, transparent 30%);
+  height: 80px;
+  width: 100%;
+}
+.clientes .blue{
+  position: absolute;
+  margin-top: 0px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+  background: linear-gradient(135deg, $our-orange 70%, $our-blue 70%);
+  height: 5px;
+  width: 100%;
+}
+.clientes .sv{
+  float: left;
+  margin-left: 20px;
+  position: relative;
+  font-size: 200%;
+}
+.clientes .clogo{
+  padding: 30px;
+}
+.clientes .clogo img{
+  margin-top: -30px;
+  margin-left: 20px;
+  -webkit-filter: grayscale(100%);
+   -moz-filter: grayscale(100%);
+   -ms-filter: grayscale(100%);
+   filter: grayscale(100%);
+   filter: gray; /* IE 6-9 */
+  padding-right: 40px;
+}
+.clientes .clogo img:hover{
+  -webkit-filter: none;
+   -moz-filter: none;
+   -ms-filter: none;
+   filter: none;
 }

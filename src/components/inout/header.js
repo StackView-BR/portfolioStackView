@@ -18,6 +18,7 @@ class Header extends React.Component {
       to2: "i",
       rotate: "-90",
       display: "none",
+      color:"white",
 
     };
 
@@ -82,6 +83,15 @@ class Header extends React.Component {
         flip: "rgba(0,0,0,0.1)",
       })
     }
+    if (window.pageYOffset >= window.innerHeight && window.pageYOffset <= totalHeight-(window.innerHeight/4)) {
+      this.setState({
+       color:"black",
+      })
+    } else if (window.pageYOffset >= totalHeight-(window.innerHeight/4) || window.pageYOffset <= window.innerHeight) {
+      this.setState({
+        color:"white",
+      })
+    }
     this.setState({
       progress: 100 - ((window.pageYOffset / totalHeight) * 100) + "%",
     });
@@ -140,7 +150,7 @@ class Header extends React.Component {
 <div className="fakebar">
         <div className="progress" style={{background: "linear-gradient(90deg, white 0,  white "+ this.state.progress +",black "+ this.state.progress +",black 100%)"}}></div>
         <div className="bar">
-          <Link href="" onClick={this.handleUp}><a >Scroll Up</a></Link>
+          <Link href="" onClick={this.handleUp}><a  style={{color: this.state.color}}>Scroll Up</a></Link>
         </div></div>
 
         </div>

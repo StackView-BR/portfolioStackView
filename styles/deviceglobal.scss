@@ -457,4 +457,42 @@ display: none;
   opacity: 100;
   margin-top: 0px;
 }
+.clientes{ 
+  padding: 0px;
+  background: none;
+
+}
+.clientes .orange{  
+  margin-top: 0px;
+  height: 80px;
+}
+.clientes .blue{
+  position: absolute;
+  margin-top: 0px;
+  height: 6px;
+  width: 100%;
+}
+.clientes .sv{
+  float: left;
+  width: 90%;
+  padding: 10px 0 50px 0;
+  position: relative;
+  font-size: 200%;
+}
+.clientes .orange{
+  background: none;
+}
+.clientes .clogo{
+  padding: 10px 0 0 0;
+}
+
+.clientes .clogo img{
+  padding: 0 0px 40px 0;
+}
+.clientes .clogo .bat{
+  width: 30vw;
+}
+.clientes .clogo .ufu{
+  width: 20vw;
+}
 }
