@@ -821,11 +821,14 @@ animation-fill-mode: forwards;
  .viewpage .gif .realgif{
   width: 80.6%;
   height: 80.6%;
+  border-radius: 0 0 30px 30px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: white;
+  background: url(/views/view1.png);
+  background-repeat: no-repeat;
+  background-size:  100% auto;
  } 
  .viewpage .gif .above{
    position: absolute;
@@ -855,6 +858,7 @@ animation-fill-mode: forwards;
 .viewpage .gif .orange{
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
   position: relative;
+  
   top: 80vh;
   left: -30%;
   transform: translate(-50%, -80%);
