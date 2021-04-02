@@ -18,7 +18,7 @@ class Header extends React.Component {
       to2: "i",
       rotate: "-90",
       display: "none",
-      color:"white",
+      color:"black",
 
     };
 
@@ -70,24 +70,24 @@ class Header extends React.Component {
   }
   handleScroll(event) {
     let totalHeight = document.body.scrollHeight - window.innerHeight;
-    if (window.pageYOffset >= window.innerHeight && window.pageYOffset <= totalHeight) {
+    if (window.pageYOffset >= window.innerHeight*1.5 && window.pageYOffset <= totalHeight) {
       this.setState({
         back: "black",
         display: "",
         flip: "white",
       })
-    } else if ((window.pageYOffset >= totalHeight || window.pageYOffset <= window.innerHeight) && !this.state.open) {
+    } else if ((window.pageYOffset >= totalHeight || window.pageYOffset <= window.innerHeight*1.5) && !this.state.open) {
       this.setState({
         back: "rgba(0,0,0,0.1)",
         display: "none",
         flip: "rgba(0,0,0,0.1)",
       })
     }
-    if (window.pageYOffset >= window.innerHeight && window.pageYOffset <= totalHeight-(window.innerHeight/4)) {
+    if ( window.pageYOffset <= totalHeight-(window.innerHeight/4)) {
       this.setState({
        color:"black",
       })
-    } else if (window.pageYOffset >= totalHeight-(window.innerHeight/4) || window.pageYOffset <= window.innerHeight) {
+    } else if (window.pageYOffset >= totalHeight-(window.innerHeight/4) ) {
       this.setState({
         color:"white",
       })
