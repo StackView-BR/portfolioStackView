@@ -13,11 +13,11 @@ function Home(){
         title1: "Desenvolvimento com",
         title2: "o melhor desempenho, UI/UX Design",
         desc: <>Desenvolvemos utilizando os frameworks e/ou linguagens que entregam o <strong>máximo desempenho</strong> e permitem uma melhor customização pensando na <strong>usuabilidade e experiencia do usuario</strong>, dentro dos prazos estipulados.
-         <br/>Seja no <strong>desenvolvimento web, mobile ou programas para os diferentes sistemas</strong>, nos preocupamos em entregar o melhor para você ou sua empresa.</> ,
+        <br/>Seja no <strong>desenvolvimento web, mobile ou programas para os diferentes sistemas</strong>, nos preocupamos em entregar o melhor para você ou sua empresa.</> ,
         more:<><img
         alt="stackview"
         className="above"
-        src="/ogp.png"
+        src="viewicons/ogp.png"
         width="30%"
         style={{marginRight: "-5%"}}      
         
@@ -33,7 +33,7 @@ function Home(){
         more: <><img
         alt="data disk"
         className="above rotator"
-        src="/disk.png"
+        src="viewicons/disk.png"
         width="auto"
         
     /></>,

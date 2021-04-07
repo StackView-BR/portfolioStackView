@@ -27,18 +27,18 @@ class Front extends React.Component {
 
 render(){
 
-    return <div className="front parallax" style={{backgroundPositionY:this.state.offsetY}}>
+    return <div className="front parallax" style={{backgroundPositionY:this.state.offsetY, backgroundImage:"url(viewicons/parallax.gif)"}}>
        
         <div className="icon">
         
             <img
             id="back"
-            src="/nodisk.png"
+            src="viewicons/nodisk.png"
             alt="stackview"
             width="auto"
         /><div className="front"><img
                 id="f"
-                src="/disk.png"
+                src="viewicons/disk.png"
                 alt="stackview"
                 width="auto"
                 

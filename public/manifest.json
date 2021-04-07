@@ -11,28 +11,28 @@
     "description": "Automação, Iot e Full-Stack, Desenvolvimento Sistemas de controle e manutenção, Aplicativos, PWA, websites responsivos e gestão de dados",
     "icons": [
       {
-        "src": "/maskable_icon.png",
+        "src": "viewicons/maskable_icon.png",
         "sizes": "196x196",
         "type": "image/png",
         "purpose": "any maskable"
       },
       {
-        "src": "/icon.png",
+        "src": "viewicons/icon.png",
         "sizes": "192x192",
         "type": "image/png"
       },
       {
-        "src": "/icon.png",
+        "src": "viewicons/icon.png",
         "sizes": "256x256",
         "type": "image/png"
       },
       {
-        "src": "/icon.png",
+        "src": "viewicons/icon.png",
         "sizes": "384x384",
         "type": "image/png"
       },
       {
-        "src": "/icon.png",
+        "src": "viewicons/icon.png",
         "sizes": "512x512",
         "type": "image/png"
       }

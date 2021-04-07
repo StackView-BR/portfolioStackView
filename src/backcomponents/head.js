@@ -13,18 +13,18 @@ function Head({ title }) {
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta property="og:title" content="StackView - Desenvolvimento Full-Stack, Design, Engenharia" key="title" />
       <meta property="og:description" content="Automação, Iot e Full-Stack, Desenvolvimento Sistemas de controle e manutenção, Aplicativos, PWA, websites responsivos e gestão de dados" key="description" />
-      <meta property="og:image" content="https://stackview.com.br/preview.png" />
+      <meta property="og:image" content="https://stackview.com.br/viewicons/preview.png" />
       <meta property="og:image:type" content="image/png" />
 
       <meta name="description" content="Automação, Iot e Full-Stack, Desenvolvimento Sistemas de controle e manutenção, Aplicativos, PWA, websites responsivos e gestão de dados" />
       <meta name="keywords" content="engenharia, programação, webdesing, dev, automação, internet das coisas, iot, full-stack, desenvolvimento, controle, manutenção, softwares, aplicativos, pwa, website, site, responsivo, banco de dados, dados, sistemas, sensores, embarcados, sistemas digitais, webdesign, design, marketing, digital" />
       <link rel="shortcut icon" href="/static/favicon.ico" />
-      <link rel="image_src" href="/preview.png" />
+      <link rel="image_src" href="viewicons/preview.png" />
 
       <meta name="twitter:card" content="summary_large_image"/>
       <meta name="twitter:title" content="StackView - Desenvolvimento Full-Stack, Design, Engenharia" />
       <meta name="twitter:description" content="Automação, Iot e Full-Stack, Desenvolvimento Sistemas de controle e manutenção, Aplicativos, PWA, websites responsivos e gestão de dados"  />
-      <meta name="twitter:image" content="https://stackview.com.br/ogp.png" />
+      <meta name="twitter:image" content="https://stackview.com.br/viewicons/ogp.png" />
 
 
       <meta name="theme-color" content="#000000" />

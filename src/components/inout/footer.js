@@ -5,7 +5,7 @@ function Footer() {
     return <div className="footer">
         <div className="foot"><div className="contact">
             <div className="suma logo"><img
-                src="/logo.png"
+                src="viewicons/logo.png"
                 width="auto"
                 alt="stackview"
             /></div>
