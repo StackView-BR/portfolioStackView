@@ -5,7 +5,7 @@ import NextHead from 'next/head';
 function Head({ title }) {
   return (
     <NextHead>
-      <html lang="pt-br"></html>
+      
       <title>
         {title}
       </title>
