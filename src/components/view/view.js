@@ -60,11 +60,11 @@ class View extends React.Component {
     render() {
       return <div className="viewpage" ref={this.myRef} style={{background: this.props.color}}>
       
-      <div className="text" style={{order: this.props.order2}}> <a className={"sv tag " + this.state.visibility} >{Object.values(this.props.data)[0]}</a> <br/><br/>
+      <div className="text" style={{order: this.props.order2}}> <a href="#" className={"sv tag " + this.state.visibility} >{Object.values(this.props.data)[0]}</a> <br/><br/>
       <div className={"title " + this.state.visibility} ><b><b style={{color: this.props.color1}}>{Object.values(this.props.data)[1]}</b><br/><b style={{color: this.props.color2}}>{Object.values(this.props.data)[2]} </b></b></div><br/>
 <div className={"cont " + this.state.tv} style={{color:this.props.color3}}>{Object.values(this.props.data)[3]} </div>
       </div>
-      <div className="gif" style={{order: this.props.order}}> <div className="realgif"></div> 
+      <div className="gif" style={{order: this.props.order}}> <div className="realgif" style={{background: "url("+Object.values(this.props.data)[5]+")",backgroundRepeat:"no-repeat",backgroundSize:"100% auto"}}></div> 
       {Object.values(this.props.data)[4]} <div className={"white " + this.state.oshow}></div><div className={"orange " + this.state.oshow} style={{background: this.props.colororange, left:this.props.left}}></div></div>
   </div>;
     }

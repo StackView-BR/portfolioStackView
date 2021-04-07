@@ -34,10 +34,12 @@ render(){
             <img
             id="back"
             src="/nodisk.png"
+            alt="stackview"
             width="auto"
         /><div className="front"><img
                 id="f"
                 src="/disk.png"
+                alt="stackview"
                 width="auto"
                 
             /></div>
@@ -48,9 +50,9 @@ render(){
         </div>
         
         <div className="fdd">
-            <div className="f"><a>development</a></div>
-            <div className="d"><a>data management</a></div>
-            <div className="m" ><a>Engineering</a></div>
+            <div className="f"><a href="#">development</a></div>
+            <div className="d"><a href="#">data management</a></div>
+            <div className="m" ><a href="#">Engineering</a></div>
         </div>
     </div>
 }

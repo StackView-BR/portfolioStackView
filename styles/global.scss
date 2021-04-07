@@ -45,6 +45,8 @@ a {
   font-family: "Custom Font", "Arial", sans-serif ;
   color: white;
   font-size: x-large;
+  text-decoration: none;
+  
 }
 a:hover, a:focus, a:active {
   background-color: transparent;
@@ -828,7 +830,6 @@ animation-fill-mode: forwards;
   left: 50%;
   background-color: transparent;
   transform: translate(-50%, -55%);
-  background: url(/views/view1.png);
   background-repeat: no-repeat;
   background-size:  100% auto;
  } 

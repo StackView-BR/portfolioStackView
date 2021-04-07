@@ -106,11 +106,11 @@ class Header extends React.Component {
         <Head title="StackView" />
         <div className="header" style={{ backgroundColor: this.state.back }} position="fixed">
 
-          <a className="logoname" href='/'><a className="stack">s</a><a style={{ display: this.state.display }} className="sv s">s</a><a style={{ display: this.state.display }} className="sv t">t</a><a style={{ display: this.state.display }} className="sv a">a</a><a style={{ display: this.state.display }} className="sv c">c</a><a style={{ display: this.state.display }} className="sv k">k</a><a className="view">v</a><a style={{ display: this.state.display }} className="sv v">v</a><a style={{ display: this.state.display }} className="sv i">i</a><a style={{ display: this.state.display }} className="sv e">e</a><a style={{ display: this.state.display }} className="sv w">w</a></a>
+          <a className="logoname" href='/'><a className="stack" href="#">s</a ><a href="#" style={{ display: this.state.display }} className="sv s">s</a><a href="#" style={{ display: this.state.display }} className="sv t">t</a><a href="#" style={{ display: this.state.display }} className="sv a">a</a><a  href="#" style={{ display: this.state.display }} className="sv c">c</a><a href="#" style={{ display: this.state.display }} className="sv k">k</a><a href="#" className="view">v</a><a href="#" style={{ display: this.state.display }} className="sv v">v</a><a href="#" style={{ display: this.state.display }} className="sv i">i</a><a href="#" style={{ display: this.state.display }} className="sv e">e</a><a href="#" style={{ display: this.state.display }} className="sv w">w</a></a>
           <div className="menu suma">
-            <Link href="https://www.behance.net/StackView"><Button><a>Portfolio</a></Button></Link>
-            <Link href="/we" ><Button><a>Developers</a></Button></Link>
-            <Link href=""  ><Button onClick={this.handleContact}><a>Contact Us</a></Button></Link>
+            <Link href="https://www.behance.net/StackView"><Button><a href="#">Portfolio</a></Button></Link>
+            <Link href="/we" ><Button><a href="#">Developers</a></Button></Link>
+            <Link href=""  ><Button onClick={this.handleContact}><a href="#">Contact Us</a></Button></Link>
 
           </div>
 
@@ -120,23 +120,24 @@ class Header extends React.Component {
               <img
                 id="icon"
                 src="/icons/icon.png"
+                alt="stackview"
                 height="70px"
               />
-              <div className="links"><Link href="https://www.behance.net/StackView" ><Button><a>Portfolio</a></Button></Link> <br />
-                <Link href="/we" ><Button><a>Developers</a></Button></Link><br />
-                <Link href="" onClick={this.handleContact} ><Button><a>Contact Us</a></Button></Link></div><br />
+              <div className="links"><Link href="https://www.behance.net/StackView" ><Button><a href="#">Portfolio</a></Button></Link> <br />
+                <Link href="/we" ><Button><a href="#" >Developers</a></Button></Link><br />
+                <Link href="" onClick={this.handleContact} ><Button><a href="#">Contact Us</a></Button></Link></div><br />
               <div className="info">
-                <a>Phone</a>: <br /> +5517988309968<br /><br />
-                <a>Email</a>: <br />stackviewbr@gmail.com<br /><br />
-                <a>Address</a>:  <br />Av. João Naves de Ávila, 2121<br /> Santa Mônica, Uberlândia - MG, 38408-100, Brasil
-                <div className="w"><a ><Link href="https://api.whatsapp.com/send?phone=5517988309968"><img
+                <a href="#">Phone</a>: <br /> +5517988309968<br /><br />
+                <a href="#">Email</a>: <br />stackviewbr@gmail.com<br /><br />
+                <a href="#">Address</a>:  <br />Av. João Naves de Ávila, 2121<br /> Santa Mônica, Uberlândia - MG, 38408-100, Brasil
+                <div className="w"><a  href="#"><Link href="https://api.whatsapp.com/send?phone=5517988309968"><img
                   id="w"
                   src="/icons/whats.png"
                   width="auto"
 
 
                 /></Link></a>
-                  <a className="t" ><Link href="https://t.me/stackviewbr"><img
+                  <a href="#"className="t" ><Link href="https://t.me/stackviewbr"><img
                     id="t"
                     src="/icons/tel.png"
                     width="auto"
@@ -145,12 +146,12 @@ class Header extends React.Component {
               </div>
 
             </div>
-            <div className="stackview"><div className="rotate"><a className="stack">stack</a><a className="view">view</a></div></div>
+            <div className="stackview"><div className="rotate"><a href="#"className="stack">stack</a><a href="#"className="view">view</a></div></div>
           </div>
 <div className="fakebar">
         <div className="progress" style={{background: "linear-gradient(90deg, white 0,  white "+ this.state.progress +",black "+ this.state.progress +",black 100%)"}}></div>
         <div className="bar">
-          <Link href="" onClick={this.handleUp}><a  style={{color: this.state.color}}>Scroll Up</a></Link>
+          <Link href="" onClick={this.handleUp}><a  href="#"style={{color: this.state.color}}>Scroll Up</a></Link>
         </div></div>
 
         </div>

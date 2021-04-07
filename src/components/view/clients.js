@@ -18,12 +18,14 @@ render(){
         <sup href="" className="sv">TRUSTED BY</sup>
         <img
         className="bat"
+        alt="souzaSV"
         src="/clientes/bat.png"
         width="150vw"
         
     />
     <img
         className="ufu"
+        alt="ufuSV"
         src="/clientes/ufu.png"
         width="90vw"
         

@@ -28,37 +28,43 @@ class First extends React.Component {
   
     render() {
       return <div className="fview" ref={this.myRef} >
-          <a className="sv"> we are engineers</a>
+          <a href="#" className="sv"> we are engineers</a>
           
           <div className="icons">
           <img
             id="a"
+            alt="stackview"
             src="/icons/a.png"
             width=""
         />
         <img
             id="b"
             src="/icons/b.png"
+            alt="stackview"
             width=""
         />
         <img
             id="c"
             src="/icons/c.png"
+            alt="stackview"
             width=""
         />
         <img
             id="d"
+            alt="stackview"
             src="/icons/e.png"
             width=""
         />
         <img
             id="f"
             src="/icons/d.png"
+            alt="stackview"
             width=""
         />
         <img
             id="icon"
             src="/icons/icon.png"
+            alt="stackview"
             height="auto"
         />
       
