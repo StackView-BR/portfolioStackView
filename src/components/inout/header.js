@@ -114,7 +114,7 @@ class Header extends React.Component {
 
           </div>
 
-          <div onClick={this.handleClick} style={{ backgroundColor: this.state.flip, transform: "rotate(" + this.state.rotate + "deg)" }} className="navicon apareca"><div className="center"><a className="view">{this.state.to2}</a><a className="stack">{this.state.to}</a></div></div>
+          <div onClick={this.handleClick} style={{ backgroundColor: this.state.flip, transform: "rotate(" + this.state.rotate + "deg)" }} className="navicon apareca"><div className="center"><a href="#"className="view">{this.state.to2}</a><a href="#"className="stack">{this.state.to}</a></div></div>
           <div className="collapso apareca" style={{ transform: "translateY(" + this.state.offset + ")" }}>
             <div className="menu">
               <img
@@ -134,12 +134,14 @@ class Header extends React.Component {
                   id="w"
                   src="/icons/whats.png"
                   width="auto"
+                  alt="whatsapp"
 
 
                 /></Link></a>
                   <a href="#"className="t" ><Link href="https://t.me/stackviewbr"><img
                     id="t"
                     src="/icons/tel.png"
+                    alt="telegram"
                     width="auto"
 
                   /></Link></a></div>
