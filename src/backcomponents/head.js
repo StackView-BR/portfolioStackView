@@ -35,6 +35,8 @@ function Head({ title }) {
 
       <meta property="og:locale" content="pt-br" />
       <meta httpEquiv="Content-Language" content="pt-br" />
+
+      <meta name="google-site-verification" content="R6nk2kHaIyu3u4qxfmfhB8BSLyZBeY3OIDW6qc7YT7o" />
       <link
         rel="preload"
         href="/fonts/REZ.woff"
