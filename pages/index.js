@@ -52,7 +52,7 @@ function Home(){
 
 
     return <div>
-        <html lang="pt-br">
+        
         <Header />
         <Front/>
         <First/>
@@ -62,7 +62,6 @@ function Home(){
         <Clients/>
 
         <Footer/>
-        </html>
         </div>
 }
 

@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Head from 'next/head';
+import NextHead from 'next/head';
 
 function Head({ title }) {
   return (
-    <Head>
+    <NextHead>
       
       <title>
         {title}
@@ -59,7 +59,7 @@ function Head({ title }) {
       <link rel="preload" as="image" href="/disk.png"/>
       <link rel="preload" as="image" href="/nodisk.png"/>
       <link rel="preload" as="image" href="/parallax.gif"/>
-    </Head >
+    </NextHead >
   );
 }
 
