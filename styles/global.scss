@@ -17,12 +17,23 @@ $our-black: #000000;
   unicode-range: U+000-5FF; /* Download only latin glyphs */
   src: local("Icon Font"), url("/fonts/XXIX.woff") format("woff");
 }
+@font-face {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; /* Read next point */
+  unicode-range: U+000-5FF; /* Download only latin glyphs */
+  src: local("Icon Font"), url("/fonts/Roboto.ttf") format("ttf");
+}
 
 html,
 body {  
   height: 100%;
   background-color: #000000;
   margin: 0;
+  font-family: "Roboto";
+  color: white;
+
 }
 .apareca{
   display: none;

@@ -49,12 +49,16 @@ function Head({ title }) {
         type="font/woff"
         crossOrigin=""
       />
+      <link
+        rel="preload"
+        href="/fonts/Roboto.ttf"
+        as="font"
+        type="font/ttf"
+        crossOrigin=""
+      />
       <link rel="preload" as="image" href="/disk.png"/>
       <link rel="preload" as="image" href="/nodisk.png"/>
       <link rel="preload" as="image" href="/parallax.gif"/>
-
-
-      <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'></link>
     </NextHead >
   );
 }
