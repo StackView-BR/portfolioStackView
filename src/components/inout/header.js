@@ -128,7 +128,7 @@ class Header extends React.Component {
                 <Link href="" onClick={this.handleContact} ><Button><a href="#">Contact Us</a></Button></Link></div><br />
               <div className="info">
                 <a href="#">Phone</a>: <br /> +5517988309968<br /><br />
-                <a href="#">Email</a>: <br />stackviewbr@gmail.com<br /><br />
+                <a href="#">Email</a>: <br />contact@stackview.com.br<br /><br />
                 <a href="#">Address</a>:  <br />Av. João Naves de Ávila, 2121<br /> Santa Mônica, Uberlândia - MG, 38408-100, Brasil
                 <div className="w"><a  href="#"><Link href="https://api.whatsapp.com/send?phone=5517988309968"><img
                   id="w"

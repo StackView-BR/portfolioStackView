@@ -32,7 +32,7 @@ function Footer() {
 
                 </div></div>
                 <br /><br /><br />
-                <a href="#">Email</a>: <br />stackviewbr@gmail.com<br /><br />
+                <a href="#">Email</a>: <br />contact@stackview.com.br<br /><br />
                 <a href="#">Address</a>:  <br />Av. João Naves de Ávila, 2121<br /> Santa Mônica, Uberlândia - MG, 38408-100, Brasil</div>
 
 
