@@ -122,6 +122,7 @@ class Header extends React.Component {
                 src="/icons/icon.png"
                 alt="stackview"
                 height="70px"
+                width="auto"
               />
               <div className="links"><Link href="https://www.behance.net/StackView" ><Button><a href="#">Portfolio</a></Button></Link> <br />
                 <Link href="/we" ><Button><a href="#" >Developers</a></Button></Link><br />

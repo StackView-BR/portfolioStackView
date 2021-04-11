@@ -58,9 +58,9 @@ function Head({ title }) {
         type="font/ttf"
         crossOrigin=""
       />
-      <link rel="preload" as="image" href="/disk.png"/>
-      <link rel="preload" as="image" href="/nodisk.png"/>
-      <link rel="preload" as="image" href="/parallax.gif"/>
+      <link rel="preload" as="image" href="viewicons/disk.png"/>
+      <link rel="preload" as="image" href="viewicons/nodisk.png"/>
+      <link rel="preload" as="image" href="viewicons/parallax.gif"/>
     </NextHead >
   );
 }
