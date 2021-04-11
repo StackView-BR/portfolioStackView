@@ -20,16 +20,14 @@ render(){
         className="bat"
         alt="souzaSV"
         src="/clientes/bat.png"
-        width="150vw"
-        height="auto"
+        
         
     />
     <img
         className="ufu"
         alt="ufuSV"
         src="/clientes/ufu.png"
-        width="90vw"
-        height="auto"
+        
         
     />
         </div>
