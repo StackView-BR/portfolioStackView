@@ -21,6 +21,7 @@ render(){
         alt="souzaSV"
         src="/clientes/bat.png"
         width="150vw"
+        height="auto"
         
     />
     <img
@@ -28,6 +29,7 @@ render(){
         alt="ufuSV"
         src="/clientes/ufu.png"
         width="90vw"
+        height="auto"
         
     />
         </div>

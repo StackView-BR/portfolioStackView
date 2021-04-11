@@ -18,6 +18,7 @@ function Footer() {
                 alt="whatsapp"
                 src="/icons/whats.png"
                 width="auto"
+                height="auto"
                 
             />
             </Link></a>
@@ -27,6 +28,7 @@ function Footer() {
                     alt="telegram"
                     src="/icons/tel.png"
                     width="auto"
+                    height="auto"
 
                 /></Link></a>
 
@@ -45,6 +47,7 @@ function Footer() {
                         alt="behance"
                         src="/icons/behance.png"
                         width="auto"
+                        height="auto"
 
                     /></Link></a>
                     <a href="#"><Link href="https://www.instagram.com/g_lisbao/"><img
@@ -52,6 +55,7 @@ function Footer() {
                         alt="instagram"
                         src="/icons/insta.png"
                         width="auto"
+                        height="auto"
 
                     /></Link></a>
                     <a href="#"><Link href="https://github.com/StackView-BR"><img
@@ -59,6 +63,7 @@ function Footer() {
                         alt="github"
                         src="/icons/git.png"
                         width="auto"
+                        height="auto"
 
                     /></Link></a>
                     <a href="#"><Link href="https://www.facebook.com/lisbao.gabriel/"><img
@@ -66,6 +71,7 @@ function Footer() {
                         alt="facebook"
                         src="/icons/face.png"
                         width="auto"
+                        height="auto"
 
                     /></Link></a>
                     
@@ -74,6 +80,7 @@ function Footer() {
                         alt="linkedin"
                         src="/icons/in.png"
                         width="auto"
+                        height="auto"
                         
                     /></Link></a>
 

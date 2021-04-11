@@ -36,11 +36,13 @@ render(){
             src="viewicons/nodisk.png"
             alt="stackview"
             width="auto"
+            height="auto"
         /><div className="front"><img
                 id="f"
                 src="viewicons/disk.png"
                 alt="stackview"
                 width="auto"
+                height="auto"
                 
             /></div>
             </div>
