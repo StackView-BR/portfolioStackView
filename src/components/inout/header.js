@@ -1,4 +1,3 @@
-import Head from '../../backcomponents/head';
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Button from '@material-ui/core/Button';
@@ -103,7 +102,7 @@ class Header extends React.Component {
 
     return (
       <div>
-        <Head title="StackView" />
+        
         <div className="header" style={{ backgroundColor: this.state.back }} position="fixed">
 
           <a className="logoname" href='/'><a className="stack" href="#">s</a ><a href="#" style={{ display: this.state.display }} className="sv s">s</a><a href="#" style={{ display: this.state.display }} className="sv t">t</a><a href="#" style={{ display: this.state.display }} className="sv a">a</a><a  href="#" style={{ display: this.state.display }} className="sv c">c</a><a href="#" style={{ display: this.state.display }} className="sv k">k</a><a href="#" className="view">v</a><a href="#" style={{ display: this.state.display }} className="sv v">v</a><a href="#" style={{ display: this.state.display }} className="sv i">i</a><a href="#" style={{ display: this.state.display }} className="sv e">e</a><a href="#" style={{ display: this.state.display }} className="sv w">w</a></a>
