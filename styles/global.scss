@@ -107,7 +107,7 @@ justify-content: center;
   background-color: $our-black;
   opacity: 0;
   animation-name: fadein;
-  animation-duration: 2s;
+  animation-duration: .5s;
   animation-delay: 1s;
   animation-fill-mode: forwards;
     -webkit-transition: background-color 1000ms linear;
