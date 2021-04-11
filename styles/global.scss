@@ -1,30 +1,9 @@
 $our-orange: #ff6600;
 $our-blue: #003153;
 $our-black: #000000;
-@font-face {
-  font-family: "Custom Font";
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap; /* Read next point */
-  unicode-range: U+000-5FF; /* Download only latin glyphs */
-  src: local("Icon Font"), url("/fonts/REZ.woff") format("woff");
-}
-@font-face {
-  font-family: "Icon Font";
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap; /* Read next point */
-  unicode-range: U+000-5FF; /* Download only latin glyphs */
-  src: local("Icon Font"), url("/fonts/XXIX.woff") format("woff");
-}
-@font-face {
-  font-family: "Roboto";
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap; /* Read next point */
-  unicode-range: U+000-5FF; /* Download only latin glyphs */
-  src: local("Icon Font"), url("/fonts/Roboto.ttf") format("ttf");
-}
+@import "./fonts/fonts.scss";
+@import "./animations/animations.scss";
+@import "./deviceglobal.scss";
 
 html,
 body {  
@@ -33,12 +12,10 @@ body {
   margin: 0;
   font-family: "Roboto";
   color: white;
-
 }
 .apareca{
   display: none;
 }
-
 .sv{
   font-family: "Icon Font", "Arial", sans-serif !important;
   color: white;
@@ -63,6 +40,7 @@ a:hover, a:focus, a:active {
   background-color: transparent;
   text-decoration: none; 
 }
+//Scroll bar 
 ::-webkit-scrollbar-track
 {
 -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
@@ -80,6 +58,8 @@ background-color: black;
 background:black;
 background:linear-gradient(135deg,$our-blue 0,#0d2f46 50%,$our-orange 50%,#F16436 100%);
 }
+//Scroll bar
+//Scroll button
 .fakebar{
   position: fixed;
   display: inline-block;
@@ -109,6 +89,8 @@ justify-content: center;
   color: black;
   text-decoration: none;
 }
+//Scroll button
+
 
 .header{
   top: 0;
@@ -515,260 +497,6 @@ animation-fill-mode: forwards;
   background: linear-gradient(45deg, $our-orange 30%, $our-blue 90%);
 }
 
-
-
-////// Animations \/\/\/\/\/\/\/
-@keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-//// fade in stack
-@keyframes fadeins {
-  from { opacity: 0;
-    margin-top: -10%;
-  }
-  to   { opacity: 1;
-    margin-top: 0%;
-   }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes fadeins {
-  from { opacity: 0;
-    margin-top: -10%;
-  }
-  to   { opacity: 1;
-    margin-top: 0%;
-   }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadeins {
-  from { opacity: 0;
-    margin-top: -10%;
-  }
-  to   { opacity: 1;
-    margin-top: 0%;
-   }
-}
-
-//// fade in view
-@keyframes fadeinv {
-  from { opacity: 0;
-    margin-top: 8%;
-  }
-  to   { opacity: 1;
-    margin-top: -8%;
-   }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes fadeinv {
-  from { opacity: 0;
-    margin-top: 8%;
-  }
-  to   { opacity: 1;
-    margin-top: -8%;
-   }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadeinv {
-  from { opacity: 0;
-    margin-top: 8%;
-  }
-  to   { opacity: 1;
-    margin-top: -8%;
-   }
-}
-
-////// Animations A e V
-@keyframes acolor {
-  0% { color: white; }
-  10%{ color: #ff6600; }
-  50%{color: white;}
-  100%{color: #ff6600;}
-}
-
-/* Firefox < 16 */
-@-moz-keyframes acolor {
-  0% { color: white; }
-  10%{ color: #ff6600; }
-  50%{color: white;}
-  100%{color: #ff6600;}
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes acolor {
-  0% { color: white; }
-  10%{ color: #ff6600; }
-  50%{color: white;}
-  100%{color: #ff6600;}
-}
-
-@keyframes vcolor {
-  20% { color: white; }
-  30%{ color: $our-blue; }
-  50%{color: white;}
-  100%{color: $our-blue;}
-}
-
-/* Firefox < 16 */
-@-moz-keyframes vcolor {
-  20% { color: white; }
-  30%{ color: $our-blue; }
-  50%{color: white;}
-  100%{color: $our-blue;}
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes vcolor {
-  20% { color: white; }
-  30%{ color: $our-blue; }
-  50%{color: white;}
-  100%{color: $our-blue;}
-}
-
-/// fdd
-
-@keyframes fadeinf {
-  from { opacity: 0;
-    margin-top: 10%;
-  }
-  to   { opacity: 1;
-    margin-top: 0%;
-   }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes fadeinf {
-  from { opacity: 0;
-    margin-top: 10%;
-  }
-  to   { opacity: 1;
-    margin-top: 0%;
-   }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadeinf {
-  from { opacity: 0;
-    margin-top: 10%;
-  }
-  to   { opacity: 1;
-    margin-top: 0%;
-   }
-}
-
-@keyframes buth {
-  100%  { 
-    background: none;
-   }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes buth {
-  100%  { 
-    background: none;
-   }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes buth {
-  100%  { 
-    background: none;
-   }
-}
-
-@keyframes buth2 {
-  90%{
-
-  }
-  100%  { 
-    background: none;
-   }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes buth2 {
-  90%{
-    
-  }
-  100%  { 
-    background: none;
-   }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes buth2 {
-  90%{
-    
-  }
-  100%  { 
-    background: none;
-   }
-}
-
-@-moz-keyframes spin { 0% { -moz-transform: rotateZ(0deg); }
-50% { -moz-transform: rotateZ(0deg); }
-100% { -moz-transform: rotateZ(-1080deg); } }
-@-webkit-keyframes spin { 0% { -webkit-transform: rotateZ(0deg); }
-50% { -webkit-transform: rotateZ(0deg); }
-100% { -webkit-transform: rotateZ(-1080deg); } }
-@keyframes spin { 0% { -webkit-transform: rotateZ(0deg); transform:rotateZ(0deg); }
-50% { -webkit-transform: rotateZ(0deg); transform:rotateZ(0deg); }
-100% { -webkit-transform: rotateZ(-1080deg); transform:rotateZ(-1080deg); } }
-
-@keyframes letter {
-  0%{
-    margin-left: -16px;
-    opacity: 0;
-
-  }
-  100%  { 
-    margin-left: 0;
-    opacity: 1;
-   }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes letter {
-  0%{
-    margin-left: -16px;
-    opacity: 0;
-
-  }
-  100%  { 
-    margin-left: 0;
-    opacity: 1;
-   }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes letter {
-  0%{
-    margin-left: -16px;
-    opacity: 0;
-
-  }
-  100%  { 
-    margin-left: 0;
-    opacity: 1;
-   }
-}
 .viewpage{
   font-family: "Roboto", "Arial", sans-serif ;
   color:$our-blue;
@@ -822,14 +550,7 @@ animation-fill-mode: forwards;
   animation: rotation 1s infinite linear;
   width: 100px;
  } 
- @keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ 
  .viewpage .gif .realgif{
   width: 80.6%;
   height: 80.6%;
@@ -897,46 +618,6 @@ animation-fill-mode: forwards;
     height: 100%;
     
   background-color: #ff6600;
-}
-
-@keyframes show {
-  0%{
-    margin-left: 10px;
-    margin-top: 10px;
-    opacity: 0;
-  }
-  100%  { 
-    margin-left: 0;
-    opacity: 1;
-   }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes show {
-  0%{
-    margin-left: 10px;
-    margin-top: 10px;
-    opacity: 0;
-
-  }
-  100%  { 
-    margin-left: 0;
-    opacity: 1;
-   }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes show {
-  0%{
-    margin-left: 10px;
-    margin-top: 10px;
-    opacity: 0;
-
-  }
-  100%  { 
-    margin-left: 0;
-    opacity: 1;
-   }
 }
 
 .fview{

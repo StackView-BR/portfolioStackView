@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "Custom Font";
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap; /* Read next point */
+    unicode-range: U+000-5FF; /* Download only latin glyphs */
+    src: local("Icon Font"), url("/fonts/REZ.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Icon Font";
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap; /* Read next point */
+    unicode-range: U+000-5FF; /* Download only latin glyphs */
+    src: local("Icon Font"), url("/fonts/XXIX.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap; /* Read next point */
+    unicode-range: U+000-5FF; /* Download only latin glyphs */
+    src: local("Icon Font"), url("/fonts/Roboto.ttf") format("ttf");
+  }
