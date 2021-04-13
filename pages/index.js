@@ -19,7 +19,7 @@ function Home() {
             alt="stackview"
             className="above"
             src="viewicons/icon.png"
-            width="25%"
+            width="150px"
             style={{ marginRight: "-5%" }}
 
         />  </>,
