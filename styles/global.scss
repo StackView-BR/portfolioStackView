@@ -306,7 +306,7 @@ justify-content: center;
             animation: fadein 3s;
 }
 .front .icon .front{
-  position: absolute;
+  
   padding: 6.25vw 0 0 12.81vw;
   background: none;
   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
@@ -317,6 +317,7 @@ justify-content: center;
   
 }
 .front .icon .front #f{
+  position: absolute;
   height: 7.5vw;
   image-rendering: auto;
   animation-name: spin;
@@ -690,7 +691,6 @@ animation-fill-mode: forwards;
 }
 .clientes{
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
-
   display: block;
   text-align: center;
   height: fit-content;
@@ -727,6 +727,7 @@ animation-fill-mode: forwards;
 }
 .clientes .clogo img{
   margin-top: -30px;
+  position: relative;
   margin-left: 20px;
   -webkit-filter: grayscale(100%);
    -moz-filter: grayscale(100%);
