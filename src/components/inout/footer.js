@@ -17,8 +17,8 @@ function Footer() {
                 id="w"
                 alt="whatsapp"
                 src="/icons/whats.png"
-                width="auto"
-                height="auto"
+                width="50px"
+                height="50px"
                 
             />
             </Link></a>
@@ -27,8 +27,8 @@ function Footer() {
                     id="t"
                     alt="telegram"
                     src="/icons/tel.png"
-                    width="auto"
-                    height="auto"
+                    width="50px"
+                    height="50px"
 
                 /></Link></a>
 
@@ -46,32 +46,32 @@ function Footer() {
                         id="be"
                         alt="behance"
                         src="/icons/behance.png"
-                        width="auto"
-                        height="auto"
+                        width="50px"
+                        height="50px"
 
                     /></Link></a>
                     <a href="#"><Link href="https://www.instagram.com/g_lisbao/"><img
                         id="insta"
                         alt="instagram"
                         src="/icons/insta.png"
-                        width="auto"
-                        height="auto"
+                        width="50px"
+                        height="50px"
 
                     /></Link></a>
                     <a href="#"><Link href="https://github.com/StackView-BR"><img
                         id="git"
                         alt="github"
                         src="/icons/git.png"
-                        width="auto"
-                        height="auto"
+                        width="50px"
+                        height="50px"
 
                     /></Link></a>
                     <a href="#"><Link href="https://www.facebook.com/lisbao.gabriel/"><img
                         id="face"
                         alt="facebook"
                         src="/icons/face.png"
-                        width="auto"
-                        height="auto"
+                        width="50px"
+                        height="50px"
 
                     /></Link></a>
                     
@@ -79,8 +79,8 @@ function Footer() {
                         id="in"
                         alt="linkedin"
                         src="/icons/in.png"
-                        width="auto"
-                        height="auto"
+                        width="50px"
+                        height="50px"
                         
                     /></Link></a>
 

@@ -42,7 +42,7 @@ render(){
                 src="viewicons/disk.png"
                 alt="stackview"
                 width="auto"
-                height="auto"
+                height="7.5vw"
                 
             /></div>
             </div>
