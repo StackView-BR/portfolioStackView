@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <meta property="og:title" content="StackView - Desenvolvimento Full-Stack, Design, Engenharia" key="title" />
       <meta property="og:description" content="Automação, Iot e Full-Stack, Desenvolvimento Sistemas de controle e manutenção, Aplicativos, PWA, websites responsivos e gestão de dados" key="description" />
-      <meta property="og:image" content="https://stackview.com.br/viewicons/preview.png" />
+      <meta property="og:image" content="viewicons/preview.png" />
       <meta property="og:image:type" content="image/png" />
 
       <meta name="description" content="Automação, Iot e Full-Stack, Desenvolvimento Sistemas de controle e manutenção, Aplicativos, PWA, websites responsivos e gestão de dados" />
@@ -28,7 +28,7 @@ function MyApp({ Component, pageProps }) {
       <meta name="twitter:card" content="summary_large_image"/>
       <meta name="twitter:title" content="StackView - Desenvolvimento Full-Stack, Design, Engenharia" />
       <meta name="twitter:description" content="Automação, Iot e Full-Stack, Desenvolvimento Sistemas de controle e manutenção, Aplicativos, PWA, websites responsivos e gestão de dados"  />
-      <meta name="twitter:image" content="https://stackview.com.br/viewicons/ogp.png" />
+      <meta name="twitter:image" content="viewicons/ogp.png" />
 
 
       <meta name="theme-color" content="#000000" />

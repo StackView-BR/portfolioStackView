@@ -18,8 +18,8 @@ function Home() {
         more: <><img
             alt="stackview"
             className="above"
-            src="viewicons/ogp.png"
-            width="30%"
+            src="viewicons/icon.png"
+            width="25%"
             style={{ marginRight: "-5%" }}
 
         />  </>,
