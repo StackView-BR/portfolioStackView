@@ -228,6 +228,7 @@ background: #37AEF3;
   }
   .front .icon .front #f{
     height: 7.5vh;
+    position: relative;
   }
 
   .footer{
@@ -502,8 +503,12 @@ display: none;
 }
 .clientes .clogo .bat{
   width: 30vw;
+  height: auto;
+
 }
 .clientes .clogo .ufu{
   width: 20vw;
+  height: auto;
+
 }
 }

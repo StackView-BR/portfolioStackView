@@ -4,11 +4,10 @@ import Front from '../src/components/startfront/front';
 import View from '../src/components/view/view';
 import First from '../src/components/view/first';
 import Clients from '../src/components/view/clients';
-import Document, { Html } from 'next/document'
-
 
 
 function Home() {
+
     const data1 = {
         tag: "Development",
         title1: "Desenvolvimento com",
