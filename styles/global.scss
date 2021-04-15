@@ -580,9 +580,13 @@ animation-fill-mode: forwards;
    top: 80vh;
    transform: translate(-10%, -180%);
    right: 10%;
-   font-size: 300%;
-   
+   font-size: 300%;   
  }
+ .viewpage .gif img{
+  width:150px;
+  height: auto;
+   
+}
  
 .viewpage .gif .white{
   position: absolute;
