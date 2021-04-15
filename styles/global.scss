@@ -306,9 +306,8 @@ justify-content: center;
             animation: fadein 3s;
 }
 .front .icon .front{
-  
-  width: 7.5vw;
-
+  position: relative;
+    width: 7.5vw;  
   height: 7.5vw;
   margin: 6.25vw 0 0 12.81vw;
   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
