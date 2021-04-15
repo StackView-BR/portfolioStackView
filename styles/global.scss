@@ -495,7 +495,7 @@ animation-fill-mode: forwards;
 .footer .rodape{
   vertical-align: bottom;
   width: 100%;
-  
+  background: yellow;
   display: flex;
   justify-content: space-between;
 }
@@ -561,6 +561,7 @@ animation-fill-mode: forwards;
   margin-top: -28% !important;
   animation: rotation 1s infinite linear;
   width: 100px;
+  height: auto;
  } 
  
  .viewpage .gif .realgif{
