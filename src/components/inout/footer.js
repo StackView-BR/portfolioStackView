@@ -91,7 +91,7 @@ function Footer() {
 
         <div className="rodape">
             <div className="made">&copy;2021+ Stackview BR | All right reserved.</div>
-            <div className="made"><a href="#">made by </a><a href="#"className="stack"> Stack</a><a href="#"className="view esse aki">View</a></div>
+            <div className="made"><a  href="#">made by </a><a href="#"className="stack"> Stack</a><a href="#"className="view esse aki">View</a></div>
         </div>
     </div>
 
