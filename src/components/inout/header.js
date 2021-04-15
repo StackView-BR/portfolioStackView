@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Button from '@material-ui/core/Button';
 import * as Scroll from 'react-scroll';
+import Image from 'next/image'
+
 
 class Header extends React.Component {
 
@@ -116,12 +118,12 @@ class Header extends React.Component {
           <div onClick={this.handleClick} style={{ backgroundColor: this.state.flip, transform: "rotate(" + this.state.rotate + "deg)" }} className="navicon apareca"><div className="center"><a href="#"className="view">{this.state.to2}</a><a href="#"className="stack">{this.state.to}</a></div></div>
           <div className="collapso apareca" style={{ transform: "translateY(" + this.state.offset + ")" }}>
             <div className="menu">
-              <img
+              <Image
                 id="icon"
-                src="/icons/icon.png"
+                src="/viewicons/preview.png"
                 alt="stackview"
-                height="70px"
-                width="auto"
+                height="100px"
+                width="100px"
               />
               <div className="links"><Link href="https://www.behance.net/StackView" ><Button><a href="#">Portfolio</a></Button></Link> <br />
                 <Link href="/we" ><Button><a href="#" >Developers</a></Button></Link><br />
