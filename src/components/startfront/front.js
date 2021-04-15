@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import Image from 'next/image'
 
 class Front extends React.Component {
 
@@ -31,18 +32,16 @@ render(){
        
         <div className="icon">
         
-            <img
+            <Image
             id="back"
-            src="viewicons/nodisk.png"
+            src="/viewicons/nodisk.png"
             alt="stackview"
-            width="auto"
-            height="auto"
-        /><div className="front"><img
+            layout="fill"
+        /><div className="front"><Image
                 id="f"
-                src="viewicons/disk.png"
+                src="/viewicons/disk.png"
                 alt="stackview"
-                width="auto"
-                height="7.5vw"
+                layout="fill"
                 
             /></div>
             </div>

@@ -221,8 +221,8 @@ justify-content: center;
 .front .stack{
   padding-top: 25vh;
   margin-left: 16vw;
-  height: 20vw;
-  width: 50vw;
+  height: 20vw;  
+  width: 50%;
   font-size: 10vw;
 
 }
@@ -292,13 +292,13 @@ justify-content: center;
   font-size: xx-large;
 }
 .front .icon{
-  position: absolute;
+  position: absolute;  
   top: 25vh;
+  height: 20vw;
+  width: 33.11vw;
   margin-left: 57vw;
 }
-.front .icon #back{
-  position: absolute;
-  height: 20vw;
+.front .icon #back{  
   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 3s; /* Firefox < 16 */
         -ms-animation: fadein 3s; /* Internet Explorer */
@@ -307,8 +307,10 @@ justify-content: center;
 }
 .front .icon .front{
   
-  padding: 6.25vw 0 0 12.81vw;
-  background: none;
+  width: 7.5vw;
+
+  height: 7.5vw;
+  margin: 6.25vw 0 0 12.81vw;
   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 3s; /* Firefox < 16 */
         -ms-animation: fadein 3s; /* Internet Explorer */
@@ -316,9 +318,7 @@ justify-content: center;
             animation: fadein 3s;       
   
 }
-.front .icon .front #f{
-  position: absolute;
-  height: 7.5vw;
+.front .icon .front #f{ 
   image-rendering: auto;
   animation-name: spin;
   animation-duration: 3s;
