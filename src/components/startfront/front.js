@@ -28,7 +28,7 @@ class Front extends React.Component {
 
 render(){
 
-    return <div className="front parallax" style={{backgroundPositionY:this.state.offsetY, backgroundImage:"url(viewicons/parallax.gif)"}}>
+    return <div className="front parallax" style={{backgroundPositionY:this.state.offsetY}}>
        
         <div className="icon">
         
@@ -51,9 +51,9 @@ render(){
         </div>
         
         <div className="fdd">
-            <div className="f"><a href="#">development</a></div>
-            <div className="d"><a href="#">data management</a></div>
-            <div className="m" ><a href="#">Engineering</a></div>
+            <div className="f custom"><a href="#">development</a></div>
+            <div className="d custom"><a href="#">data management</a></div>
+            <div className="m custom" ><a href="#">Engineering</a></div>
         </div>
     </div>
 }

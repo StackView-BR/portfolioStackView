@@ -29,13 +29,13 @@ body {
   color:$our-blue;
   box-shadow: yellow;
 }
-
-a {
-  font-family: "Custom Font", "Arial", sans-serif ;
-  color: white;
-  font-size: x-large;
+a{
   text-decoration: none;
-  
+  color: white;
+}
+.custom {
+  font-family: "Custom Font", "Arial", sans-serif !important;  
+  font-size: x-large;  
 }
 a:hover, a:focus, a:active {
   background-color: transparent;
@@ -419,83 +419,21 @@ background: #37AEF3;
   margin: 10px;
   
 }
-.foot .follow .line #be{
-  background: #0057FF;
-  animation-name: buth2;
-animation-delay: 0s;
-animation-duration: 2s;
-animation-iteration-count: infinite;
-animation-fill-mode: forwards;
-}
-.foot .follow .line #face{
-  background: #0B84EE;
-  animation-name: buth2;
-  animation-delay: 1.2s;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-fill-mode: forwards;  
-}
-.foot .follow .line #git{
-  background: #161B22;
-  animation-name: buth2;
-  animation-delay: 0.8s;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-fill-mode: forwards;
-}
-.foot .follow .line #insta{
-  background: #D7407F;
-  animation-name: buth2;
-  animation-delay: 0.4s;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-fill-mode: forwards;
-}
-.foot .follow .line #in{
-  background: #0A66C2;
-  animation-name: buth2;
-  animation-delay: 1.6s;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-fill-mode: forwards;
-}
-
-.foot .follow .line #be:hover{
-  height: 60px;
-  width: auto;
-  background: #0057FF;
-}
-.foot .follow .line #face:hover{
-  height: 60px;
-  width: auto;
-  background: #0B84EE;
-}
-.foot .follow .line #git:hover{
-  height: 60px;
-  width: auto;
-  background: #161B22;
-}
-.foot .follow .line #insta:hover{
-  height: 60px;
-  width: auto;
-  background: #D7407F;
-}
-.foot .follow .line #in:hover{
-  height: 60px;
-  width: auto;
-  background: #0A66C2;
-}
-
 .foot .follow .line img{
   height: 50px;
-  border-radius: 30px;
-  
+  border-radius: 30px;  
+}
+.foot .follow .line img:hover{
+  animation-name: buth2;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
 }
 
 .footer .rodape{
   vertical-align: bottom;
   width: 100%;
-  background: #3b3f39;
+  
   display: flex;
   justify-content: space-between;
 }

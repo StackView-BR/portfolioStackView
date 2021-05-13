@@ -63,8 +63,7 @@ function MyApp({ Component, pageProps }) {
         crossOrigin=""
       />
       <link rel="preload" as="image" href="viewicons/disk.png"/>
-      <link rel="preload" as="image" href="viewicons/nodisk.png"/>
-      <link rel="preload" as="image" href="viewicons/parallax.gif"/>
+      <link rel="preload" as="image" href="viewicons/nodisk.png"/>      
       </Head>
       <Component {...pageProps} />
     </>
