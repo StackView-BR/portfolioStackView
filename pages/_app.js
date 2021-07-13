@@ -1,5 +1,3 @@
-import App from 'next/app';
-
 import '../styles/global.scss';
 import '../styles/deviceglobal.scss';
 

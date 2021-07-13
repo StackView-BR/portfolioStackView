@@ -121,6 +121,7 @@ class Header extends React.Component {
             <span style={{ display: this.state.display }} className="sv w">w</span>
           </a>
           <div className="menu suma">
+          <Link href="/we" ><Button><a className="custom">About</a></Button></Link>
             <Link href="https://www.behance.net/StackView"><Button><a className="custom">Portfolio</a></Button></Link>
             <Link href="/we" ><Button><a className="custom">Developers</a></Button></Link>
             <Link href=""  ><Button onClick={this.handleContact}><a className="custom">Contact Us</a></Button></Link>
