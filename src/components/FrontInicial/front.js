@@ -46,8 +46,8 @@ render(){
             /></div>
             </div>
         <div className="stack">
-            <div className="sv s"> St <div className="o"> a </div>ck</div>
-            <div className="sv v"><div className="b">V</div>iew</div>
+            <div className="sv s">Stack</div>
+            <div className="sv v">View</div>
         </div>
         
         <div className="fdd">

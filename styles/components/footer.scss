@@ -1,0 +1,93 @@
+.footer{
+    height: 40vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+  }
+  .foot{
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+  .foot .contact{
+    margin: 30px;
+    padding: 10px;
+    display: flex;
+    width: 60%;
+    font-family: 'Roboto', sans-serif;  
+  }
+  .foot .contact .logo {
+    padding: 0px 20px 0px 0px;
+  }
+  .foot .contact .card {
+    padding: 10px 0px 0px 20px;
+  }
+  .foot .contact .card img{
+    height: 50px;
+    border-radius: 30px;
+  }
+  .foot .contact .card a{
+    top: -10px;
+    padding: 5px;
+  }
+  .foot .contact .card .social{
+    margin-bottom: -40px;
+    display: flex;
+  }
+  .foot .contact .card .social a{
+    margin-top: -6px;
+  }
+  .foot .contact .card .social .w{
+    margin-top: -15px;
+    padding-left: 30px;
+  }
+  
+  .foot .contact .card .social .w #w:hover{
+    
+    background: #26D366;
+  }
+  .foot .contact .card .social .w #t:hover{
+    
+    background: #37AEF3;
+  }
+  .foot .contact .logo img{
+    width: auto;
+    height: auto;
+    max-width: 150px;
+    max-height: 150px;
+  }
+  
+  .foot .follow{
+    padding: 45px 0 0 10px;
+    width: 40%;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .foot .follow .line{
+    display: flex;
+    padding: 10px 0 0 0;
+    margin-left: -15px;
+    
+  }
+  .foot .follow .line a{
+    margin: 10px;
+    
+  }
+  .foot .follow .line img{
+    height: 50px;
+    border-radius: 30px;  
+  }
+  .foot .follow .line img:hover{    
+
+  }
+  
+  .footer .rodape{
+    vertical-align: bottom;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .rodape .made{
+    padding: 10px;
+  }
