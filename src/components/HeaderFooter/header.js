@@ -180,7 +180,7 @@ class Header extends React.Component {
           <div className="fakebar">
             <div className="progress" style={{ background: "linear-gradient(90deg, white 0,  white " + this.state.progress + ",black " + this.state.progress + ",black 100%)" }}></div>
             <div className="bar custom">
-              <Link href="" onClick={this.handleUp}><a style={{ color: this.state.color }}>Scroll Up</a></Link>
+              <a onClick={this.handleUp} style={{ color: this.state.color, cursor: "pointer" }}>Scroll Up</a>
             </div></div>
 
         </div>

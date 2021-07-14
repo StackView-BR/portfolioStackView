@@ -1,3 +1,7 @@
+$our-orange: #ff6600;
+$our-blue: #003153;
+$our-black: #000000;
+
 ////// Animations \/\/\/\/\/\/\/
 @keyframes fadein {
     from { opacity: 0; }
@@ -92,36 +96,6 @@
     100%{color: #ff6600;}
   }
   
-  /* Safari, Chrome and Opera > 12.1 */
-  @-webkit-keyframes acolor {
-    0% { color: white; }
-    10%{ color: #ff6600; }
-    50%{color: white;}
-    100%{color: #ff6600;}
-  }
-  
-  @keyframes vcolor {
-    20% { color: white; }
-    30%{ color: $our-blue; }
-    50%{color: white;}
-    100%{color: $our-blue;}
-  }
-  
-  /* Firefox < 16 */
-  @-moz-keyframes vcolor {
-    20% { color: white; }
-    30%{ color: $our-blue; }
-    50%{color: white;}
-    100%{color: $our-blue;}
-  }
-  
-  /* Safari, Chrome and Opera > 12.1 */
-  @-webkit-keyframes vcolor {
-    20% { color: white; }
-    30%{ color: $our-blue; }
-    50%{color: white;}
-    100%{color: $our-blue;}
-  }
   
   /// fdd
   

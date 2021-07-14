@@ -1,0 +1,99 @@
+//front
+.front{
+    width: 100%;
+    height: 100vh;
+    background-size: 100% auto;
+  }
+  
+  .front .stack{
+    padding-top: 25vh;
+    margin-left: 16vw;
+    height: 20vw;  
+    width: 50%;
+    font-size: 10vw;
+  
+  }
+  .front .stack .s{
+    display: flex;
+    -webkit-animation: fadeins 2s; /* Safari, Chrome and Opera > 12.1 */
+         -moz-animation: fadeins 2s; /* Firefox < 16 */
+          -ms-animation: fadeins 2s; /* Internet Explorer */
+           -o-animation: fadeins 2s; /* Opera < 12.1 */
+              animation: fadeins 2s;
+  
+  }
+  .front .stack .v{
+    display: flex;
+    margin-top: -8%;
+    margin-left: 26.4%;
+    -webkit-animation: fadeinv 2s; /* Safari, Chrome and Opera > 12.1 */
+         -moz-animation: fadeinv 2s; /* Firefox < 16 */
+          -ms-animation: fadeinv 2s; /* Internet Explorer */
+           -o-animation: fadeinv 2s; /* Opera < 12.1 */
+              animation: fadeinv 2s;
+  }
+  
+  .front .fdd{
+    display: inline-block;
+    margin-top: 0vh;
+    margin-left: 16vw;
+  }
+  .front .fdd .f{
+    opacity: 0;
+    animation-name: fadeinf;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+  }
+  .front .fdd .d{
+    opacity: 0;
+    animation-name: fadeinf;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+  }
+  .front .fdd .m{
+    opacity: 0;
+    animation-name: fadeinf;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+  }
+  
+  .front .fdd div a{
+    font-size: xx-large;
+  }
+  .front .icon{
+    position: absolute;  
+    top: 25vh;
+    height: 20vw;
+    width: 30.5vw;
+    margin-left: 57vw;
+  }
+  .front .icon #back{  
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+         -moz-animation: fadein 3s; /* Firefox < 16 */
+          -ms-animation: fadein 3s; /* Internet Explorer */
+           -o-animation: fadein 3s; /* Opera < 12.1 */
+              animation: fadein 3s;
+  }
+  .front .icon .front{
+    position: relative;
+      width: 7.5vw;  
+    height: 7.5vw;
+    margin: 6.25vw 0 0 11.5vw;
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+         -moz-animation: fadein 3s; /* Firefox < 16 */
+          -ms-animation: fadein 3s; /* Internet Explorer */
+           -o-animation: fadein 3s; /* Opera < 12.1 */
+              animation: fadein 3s;       
+    
+  }
+  .front .icon .front #f{ 
+    image-rendering: auto;
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    }
