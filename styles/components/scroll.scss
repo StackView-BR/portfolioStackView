@@ -1,0 +1,13 @@
+.ScrollButton{
+    position: fixed;
+    bottom: 10px;
+    right: 0px;
+    z-index: 9999;
+}
+#textScroll {
+    transform-origin: 50% 50%;
+    animation: loader 8s linear infinite;
+}
+#ScrollText{
+    cursor: pointer;
+}

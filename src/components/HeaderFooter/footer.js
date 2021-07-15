@@ -25,9 +25,8 @@ function Footer() {
             Address:  <br />Av. João Naves de Ávila, 2121<br /> Santa Mônica, Uberlândia - MG, 38408-100, Brasil
 
             </address>
-
-            <div className="card"> <div className="social">
-                <div className="w">
+            
+            <div className="WhatsTele">
                     <Link href="https://api.whatsapp.com/send?phone=5517988309968">
                         <a> <img
                             href="https://api.whatsapp.com/send?phone=5517988309968"
@@ -52,8 +51,7 @@ function Footer() {
                         />
                         </a></Link>
 
-                </div></div>                
-            </div>
+                </div>
 
         </div>
             <div className="follow">
@@ -65,7 +63,6 @@ function Footer() {
                         src="/icons/behance.png"
                         width="50px"
                         height="50px"
-                        style={{background:"#0057FF"}}
 
                     /></a></Link>
                     <Link href="https://www.instagram.com/g_lisbao/"><a><img
@@ -74,7 +71,6 @@ function Footer() {
                         src="/icons/insta.png"
                         width="50px"
                         height="50px"
-                        style={{background:"#D7407F"}}
 
                     /></a></Link>
                     <Link href="https://github.com/StackView-BR"><a><img
@@ -83,7 +79,6 @@ function Footer() {
                         src="/icons/git.png"
                         width="50px"
                         height="50px"
-                        style={{background:"#161B22"}}
 
                     /></a></Link>
                     <Link href="https://www.facebook.com/lisbao.gabriel/"><a><img
@@ -92,7 +87,6 @@ function Footer() {
                         src="/icons/face.png"
                         width="50px"
                         height="50px"
-                        style={{background:"#0B84EE"}}
 
                     /></a></Link>
                     <Link href="https://www.linkedin.com/in/gabrielelisbao/"><a><img
@@ -100,8 +94,7 @@ function Footer() {
                         alt="linkedin"
                         src="/icons/in.png"
                         width="50px"
-                        height="50px"
-                        style={{background:"#0A66C2"}}
+                        height="50px"                        
 
                     /></a></Link>
                 </div>
@@ -109,7 +102,7 @@ function Footer() {
             </div></div>
 
         <div className="rodape">
-            <div className="made">&copy;2021+ Stackview BR | All right reserved.</div>
+            <div className="rights">&copy;2021+ Stackview BR | All right reserved.</div>
             <div className="made" style={{fontSize:"x-large"}}><span className="custom">made by </span><a href="#" className="stack"> Stack</a><a href="#" className="view esse aki">View</a></div>
         </div>
     </div>
