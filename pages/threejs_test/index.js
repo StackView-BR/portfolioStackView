@@ -4,6 +4,7 @@ import ThreeHost from '../../src/threeHost/threeHost';
 
 function ThreeJS() {
     return <div>
+        <Header />
         <ThreeHost />
     </div>
 }
