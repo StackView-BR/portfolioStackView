@@ -1,4 +1,4 @@
-import React from 'react';
+import React ,{Component} from 'react';
 import * as THREE from 'three';
 
 class ThreeHost extends React.Component {
@@ -9,10 +9,10 @@ class ThreeHost extends React.Component {
     
     componentDidMount(){
         const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+        const camera = new THREE.PerspectiveCamera( 75, this.container.offsetWidth / this.container.offsetHeight, 0.1, 1000 );
 
         const renderer = new THREE.WebGLRenderer();
-        renderer.setSize( window.innerWidth, window.innerHeight );
+        renderer.setSize( this.container.offsetWidth, this.container.offsetHeight );
         document.body.appendChild( renderer.domElement );
 
         const geometry = new THREE.BoxGeometry();
@@ -35,11 +35,11 @@ class ThreeHost extends React.Component {
     }
      
 
-render(){
-    return <div className="threeHost"> 
-    
-    </div>;
-}
+    render(){
+        return <div className="threeHost" ref={el => (this.container = el)}> 
+        
+        </div>;
+    }
     
 
 }
