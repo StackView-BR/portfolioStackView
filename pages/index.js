@@ -5,14 +5,19 @@ import Clients from '../src/components/TrustedBy/clients';
 import Devs from '../src/components/Devs/devs';
 import ThreeHost from '../src/threeHost/threeHost';
 import ScrollUp from '../src/components/ScrollUp/scroll';
+import Loader from '../src/components/Loader/loader';
 
 function Home() {
     return <div>
+        <Loader/>
+        <div className="threeHost">
+            <ThreeHost />
+        </div>
         <Header />
         <ScrollUp />
-        <ThreeHost />
+        
         <Front />
-        <Devs/>
+        <Devs />
         <Clients />
         <Footer />
     </div>
