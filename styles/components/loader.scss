@@ -1,0 +1,17 @@
+.loader{
+  height: 100%;
+  width: 100vw;
+  background: black;
+  z-index: 99999;
+  position: fixed;
+}
+
+.loading{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.orangeStroke{
+  
+}
