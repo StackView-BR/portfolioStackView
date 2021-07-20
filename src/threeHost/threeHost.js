@@ -1,4 +1,5 @@
 import React ,{Component} from 'react';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import * as THREE from 'three';
 
 class ThreeHost extends React.Component {
@@ -17,9 +18,19 @@ class ThreeHost extends React.Component {
 
         const geometry = new THREE.BoxGeometry();
         const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-        const cube = new THREE.Mesh( geometry, material );
-        scene.add( cube );
+        //const cube = new THREE.Mesh( geometry, material );
+        //scene.add( cube );
+        const loader = new GLTFLoader();
 
+        loader.load( '../../public/Assets3D/Objects/stack-view-flat.glb', function ( gltf ) {
+        
+        	scene.add( gltf.scene );
+        
+        }, undefined, function ( error ) {
+        
+        	console.error( error );
+        
+        } );
         camera.position.z = 5;
         
         const animate = function () {
