@@ -8,6 +8,8 @@
 @import "./components/footer.scss";
 @import "./components/devs.scss";
 @import "./components/scroll.scss";
+@import "./components/loader.scss";
+
 
 $our-orange: #ff6600;
 $our-blue: #003153;
@@ -16,7 +18,7 @@ $our-black: #000000;
 html,
 body {  
   height: 100%;
-  background: transparent;
+  background: black;
   margin: 0;
   font-family: "Roboto";
   color: black; 
