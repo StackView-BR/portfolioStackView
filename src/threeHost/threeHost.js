@@ -1,5 +1,6 @@
 import React from 'react';
-import * as THREE from 'three';
+import {GLTFLoader} from './loaders/GLTFLoader';
+const THREE = require('three');
 
 class ThreeHost extends React.Component {
 
@@ -7,39 +8,46 @@ class ThreeHost extends React.Component {
         super(props);
     }
     
-    componentDidMount(){
+    async componentDidMount(){
+        
         const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+        scene.background= new THREE.Color( 0x979797 );
 
+        const camera = new THREE.PerspectiveCamera( 75, this.container.offsetWidth / this.container.offsetHeight, 0.1, 1000 );
+        
         const renderer = new THREE.WebGLRenderer();
-        renderer.setSize( window.innerWidth, window.innerHeight );
+        renderer.setSize( this.container.offsetWidth, this.container.offsetHeight );
         document.body.appendChild( renderer.domElement );
-
+        
         const geometry = new THREE.BoxGeometry();
         const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
         const cube = new THREE.Mesh( geometry, material );
-        scene.add( cube );
+        const loader = new GLTFLoader();
 
-        camera.position.z = 5;
+        loader.load( 'assets3D/objects/stack-view-flat.gltf', function ( gltf ) {
+        	scene.add( gltf.scene );
+            console.log('scene loaded right');
+        }, undefined, function ( error ) {
+        	console.error( error );        
+        } );
+        camera.position.z = 30;
+        camera.position.x = 0;
+        camera.position.y = 10;
         
         const animate = function () {
             requestAnimationFrame( animate );
-
-            cube.rotation.x += 0.01;
-            cube.rotation.y += 0.01;
-
             renderer.render( scene, camera );
         };
 
-        animate();           
+        animate();
     }
      
 
-render(){
-    return <div className="threeHost"> 
-    
-    </div>;
-}
+    render(){
+        return <div className="threeHost" ref={el => (this.container = el)}> 
+        
+        </div>;
+    }
     
 
 }
