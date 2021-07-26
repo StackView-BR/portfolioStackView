@@ -12,6 +12,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+#p1, #p2{
+  transition: all 1s ease-out;
+}
 .orangeStroke{
   
 }
+
