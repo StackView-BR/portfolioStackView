@@ -9,10 +9,10 @@ import Loader from '../src/components/Loader/loader';
 
 function Home() {
     return <div>
-        <Loader/>
-        <div className="threeHost">
+         <Loader/>
+        {/* <div className="threeHost">
             <ThreeHost />
-        </div>
+        </div> */}
         <Header />
         <ScrollUp />
         
