@@ -19,27 +19,34 @@ class ThreeHost extends React.Component {
         renderer.setSize( this.container.offsetWidth, this.container.offsetHeight );
         document.body.appendChild( renderer.domElement );
         
-        const geometry = new THREE.BoxGeometry();
-        const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-        const cube = new THREE.Mesh( geometry, material );
         const loader = new GLTFLoader();
+        var objectRendered;
 
-        loader.load( 'assets3D/objects/stack-view-flat.gltf', function ( gltf ) {
-        	scene.add( gltf.scene );
-            console.log('scene loaded right');
-        }, undefined, function ( error ) {
-        	console.error( error );        
-        } );
         camera.position.z = 30;
         camera.position.x = 0;
         camera.position.y = 10;
         
-        const animate = function () {
-            requestAnimationFrame( animate );
-            renderer.render( scene, camera );
-        };
+        
+        // this only runs when the model was loaded
+        // and this may take a long while watch out
+        loader.load('assets3D/objects/stack-view-flat.gltf', function ( gltf ) {
+            objectRendered = gltf.scene;
+            scene.add( gltf.scene );
+            
+            const animate = function () {
+                requestAnimationFrame( animate );
+    
+                objectRendered.rotation.x+= 0.01;
+                objectRendered.rotation.y+= 0.01;
+    
+                renderer.render( scene, camera );
+            };
+            
+            animate();
+        }, undefined, function ( error ) {
+        	console.error( error );        
+        } );
 
-        animate();
     }
      
 
