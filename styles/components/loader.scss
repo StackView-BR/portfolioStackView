@@ -15,7 +15,33 @@
 #p1, #p2{
   transition: all 1s ease-out;
 }
-.orangeStroke{
-  
+
+.boxOrange{  
+  position: absolute;
+  z-index: 99999;
+  background: #ff6600;
+  width: 100vw;
+  height: 100vh;
+  top: -100vh;
+  animation: 
+  colorLoader
+  1s
+  ease-in
+  6.1s
+  forwards,
+  colorOut
+  0.5s
+  ease-out
+  7.5s
+  forwards;
 }
 
+@keyframes colorOut {
+  from {background-color: #ff6600;}
+  to {background-color: black;}
+}
+
+@keyframes colorLoader {
+  from {top: -100vh;}
+  to {top: 0vh;}
+}
