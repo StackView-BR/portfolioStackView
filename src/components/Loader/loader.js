@@ -41,8 +41,21 @@ export default function loader() {
                     <linearGradient id="id3" gradientUnits="userSpaceOnUse" xlinkHref="#id2" x1="4980" y1="5133" x2="4705" y2="5223">
                     </linearGradient>
                     <radialGradient id="id4" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.00001 -0 -0 0.999994 0 0)" cx="5002" cy="5009" r="1209" fx="5002" fy="5009">
-                        <stop offset="0" stopOpacity="1" stopColor="#FF9B05" />
-                        <stop offset="1" stopOpacity="1" stopColor="#FF6600" />
+                        <stop offset="0" stopOpacity="1" stopColor="#FF9B05" />                        
+                        <stop offset="0" stopOpacity="1" stopColor="#FF6600" >
+                        <animate 
+                                attributeName="offset"
+                                from="0" to="1" dur="1s"
+                                begin="8"
+                                fill="freeze" />
+                        </stop>
+                        <stop offset="0" stopOpacity="1" stopColor="white" >
+                        <animate 
+                                attributeName="offset"
+                                from="0" to="1" dur="1s"
+                                begin="8"
+                                fill="freeze" />
+                        </stop>
                     </radialGradient>
                 </defs>
                 
@@ -53,9 +66,8 @@ export default function loader() {
                     <path id="diskpath1" fill="none" stroke="black" strokeWidth="100" d="M9000 -5000, Q5000, 4000 5500 6400" />
                     <path id="diskpath2" fill="none" stroke="black" strokeWidth="100" d="M5500 6400, Q2500, 4200 3000 6400" />
                     <path id="diskpath3" fill="none" stroke="black" strokeWidth="100" d="M3000 6400, Q2000, 5000 1500 6400" />
-                    <path id="diskpath4" fill="none" stroke="black" strokeWidth="100" d="M1500 6400, L-5000 6400" />
+                    <path id="diskpath4" fill="none" stroke="black" strokeWidth="100" d="M1500 6400, L-6000 6400" />
 
-                    
                     <circle r="210" id="disk"fill="none" opacity="0" stroke="white" strokeWidth="340" >
                     <animate id="animation1"
                             attributeName="opacity"
@@ -795,15 +807,157 @@ export default function loader() {
                             fill="freeze"
                         />
                     </circle>
-                    <rect x="0" fill="url(#orange)" width="10000" height="10000" >
+                    <circle cx="5000" cy="5000"  fill="url(#orange)" r="9000" >
                     
-                    </rect>
-                    <g>
+                    </circle>
+                
+                    <g >
                         <path fill="url(#id4)" d="M5002 5388c-209,0 -379,-170 -379,-379 0,-209 170,-379 379,-379 209,0 379,170 379,379 0,209 -170,379 -379,379zm0 -420c23,0 41,18 41,41 0,23 -18,41 -41,41 -23,0 -41,-18 -41,-41 0,-23 18,-41 41,-41z" />
                         <path fill="url(#id2)" d="M5042 4951l145 -230c69,44 121,110 145,188l-259 83c-6,-18 -17,-32 -32,-41z" />
                         <path fill="url(#id3)" d="M4960 5073l-143 231c-69,-43 -122,-109 -147,-187l258 -85c6,18 17,32 32,41z" />
+                        <animateTransform attributeName="transform"
+                          attributeType="XML"
+                          type="rotate"
+                          from="0 5000 5000"
+                          to="360 5000 5000"
+                          dur="0.2s"
+                          begin="8"
+                          repeatCount="indefinite"/>
                     </g>
+                    <g
+                    transform="
+                    translate(3250 3240)
                     
+                    scale(0.7)">
+                        <animate id="animation1"
+                            attributeName="opacity"
+                            from="1" to="0" dur="0.1ms"
+                            begin="8.8"
+                            fill="freeze" />
+
+                        <path id="lowake2" fill="none" stroke="#ff6600" strokeWidth="1100" strokeLinecap="round" strokeMiterlimit="22.9256" d="M400 2460, Q2500,2600 4600 2460" >
+                        
+                        <animate xlinkHref="#lowake2"
+                            attributeName="d"
+                            attributeType="XML" s
+                            from="M400 2460, Q2500,2600 4600 2460"
+                            to="M400 2460, Q2500,0 4600 2460"
+                            begin="7.2"
+                            dur="0.3s"
+                            fill="freeze" />
+                        <animate id="animation1"
+                            attributeName="opacity"
+                            from="1" to="0" dur="0.1ms"
+                            begin="7.4"
+                            fill="freeze" />
+                    </path>
+                    <path id="redeye" opacity="0" fill="none" stroke="black" strokeWidth="250" strokeLinecap="round" strokeMiterlimit="22.9256" d="M891 2537, Q2500,4400 4109 2527" >
+                    <animate id="animation1"
+                            attributeName="opacity"
+                            from="0" to="1" dur="0.1ms"
+                            begin="7.1"
+                            fill="freeze" />
+                    </path>
+                    <path id="loweye2" fill="none" opacity="0" stroke="black" strokeWidth="250" strokeLinecap="round" strokeMiterlimit="22.9256" d="M891 2537, Q2500,4400 4109 2527" >
+                    <animate id="animation1"
+                            attributeName="opacity"
+                            from="0" to="1" dur="0.1ms"
+                            begin="7.1"
+                            fill="freeze" />                    
+                        <animate xlinkHref="#loweye2"
+                            attributeName="d"
+                            attributeType="XML"
+                            from="M891 2537, Q2500,4400 4109 2527"
+                            to="M891 2537, Q2500,600 4109 2527"
+                            begin="7.2s"
+                            dur="0.3s"
+                            fill="freeze" />                        
+                    </path>
+                    <path id="p112" fill="none" stroke="black" strokeWidth="250" opacity="0" strokeLinecap="round" strokeMiterlimit="22.9256" d="M850 1950, 850 1950" >
+                        {/* aparece */}
+                        <animate xlinkHref="#p112"
+                            attributeName="d"
+                            attributeType="XML"
+                            from="M850 1950, 850 1950"
+                            to="M850 1950, 660 1750"
+                            begin="7.2"
+                            dur="0.1ms"
+                            fill="freeze" />
+                        <animate id="animation1"
+                            attributeName="opacity"
+                            from="0" to="1" dur="0.1ms"
+                            begin="7.2"
+                            fill="freeze" />                        
+
+                    </path>
+                    <path id="p222" fill="none" stroke="black" strokeWidth="250" opacity="0" strokeLinecap="round" strokeMiterlimit="22.9256" d="M1600 1370, 1600 1370" >
+                        <animate xlinkHref="#p222"
+                            attributeName="d"
+                            attributeType="XML"
+                            from="M1600 1370, 1600 1370"
+                            to="M1600 1370, 1450 1100"
+                            begin="7.3"
+                            dur="0.1ms"
+                            fill="freeze" />
+                        <animate id="animation1"
+                            attributeName="opacity"
+                            from="0" to="1" dur="0.1ms"
+                            begin="7.3"
+                            fill="freeze" />
+                        
+                    </path>
+                    <path id="p32" fill="none" stroke="black" strokeWidth="250" opacity="0" strokeLinecap="round" strokeMiterlimit="22.9256" d="M2500 1150, 2500 1150" >
+                        <animate xlinkHref="#p32"
+                            attributeName="d"
+                            attributeType="XML"
+                            from="M2500 1150, 2500 1150"
+                            to="M2500 1150, 2500 870"
+                            begin="7.4"
+                            dur="0.1ms"
+                            fill="freeze" />
+                        <animate id="animation1"
+                            attributeName="opacity"
+                            from="0" to="1" dur="0.1ms"
+                            begin="7.4"
+                            fill="freeze" />
+                        
+                    </path>
+                    <path id="p42" fill="none" stroke="black" strokeWidth="250" opacity="0" strokeLinecap="round" strokeMiterlimit="22.9256" d="M3400 1370, 3400 1370" >
+                        <animate xlinkHref="#p42"
+                            attributeName="d"
+                            attributeType="XML"
+                            from="M3400 1370, 3400 1370"
+                            to="M3400 1370, 3550 1100"
+                            begin="7.5"
+                            dur="0.1ms"
+                            fill="freeze" />
+                        <animate id="animation1"
+                            attributeName="opacity"
+                            from="0" to="1" dur="0.1ms"
+                            begin="7.5"
+                            fill="freeze" />
+                        
+                    </path>
+                    <path id="p52" fill="none" stroke="black" strokeWidth="250" opacity="0" strokeLinecap="round" strokeMiterlimit="22.9256" d="M4150 1950, 4150 1950" >
+                        <animate xlinkHref="#p52"
+                            attributeName="d"
+                            attributeType="XML"
+                            from="M4150 1950, 4150 1950"
+                            to="M4150 1950, 4400 1750"
+                            begin="7.6"
+                            dur="0.1ms"
+                            fill="freeze" />
+                        <animate id="animation1"
+                            attributeName="opacity"
+                            from="0" to="1" dur="0.1ms"
+                            begin="7.6"
+                            fill="freeze" />
+                        
+                    </path>
+
+                    
+                </g>
+                   
                 </g>
                 </svg>
             </div>
