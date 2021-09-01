@@ -4,6 +4,12 @@
   background: black;
   z-index: 99999;
   position: fixed;
+  animation: 
+  endLoader
+  0.8s
+  ease-in
+  9.8s
+  forwards;
 }
 
 .loading{
@@ -15,7 +21,43 @@
 #p1, #p2{
   transition: all 1s ease-out;
 }
-.orangeStroke{
-  
+
+.boxOrange{  
+  position: absolute;
+  z-index: 99999;
+  background: #ff6600;
+  width: 100vw;
+  height: 140vh;
+  top: -140vh;
+  animation: 
+  colorLoader
+  0.9s
+  ease-in
+  6s
+  forwards,
+  colorOut
+  0.2s
+  ease-out
+  8.2s
+  forwards;
 }
 
+@keyframes colorOut {
+  from {background-color: #ff6600;}
+  to {background-color: black;}
+}
+
+@keyframes colorLoader {
+  from {top: -140vh;}
+  to {top: -20vh;}
+}
+
+@keyframes endLoader {
+  from {opacity: 1;
+    transform: scale(1);
+  }
+  to {opacity: 0;
+    transform: scale(2);
+  display: none;
+z-index: -99;}
+}
