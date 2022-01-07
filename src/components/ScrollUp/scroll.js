@@ -8,7 +8,7 @@ class ScrollUp extends React.Component {
         super(props);
         this.state = {
             progress: "0%",
-            text: <> &nbsp;&nbsp;&nbsp;•&#x25C0;•&nbsp;&nbsp;stackview&nbsp;&nbsp;&nbsp;•&#x25C0; •&nbsp;&nbsp; scroll&nbsp; down&nbsp; to &nbsp;see&nbsp; more</>,
+            text: <> &nbsp;•&nbsp;&nbsp;•&nbsp;&nbsp;•&nbsp;&nbsp;stackview&nbsp;&nbsp;•&nbsp;&nbsp; •&nbsp;&nbsp; •&nbsp; scroll&nbsp; down&nbsp; to &nbsp;see&nbsp; more</>,
             rotate: 0
         };
 
@@ -58,7 +58,7 @@ class ScrollUp extends React.Component {
             })
         } else {
             this.setState({
-                text: <> &nbsp;&nbsp;&nbsp;•&#x25C0;•&nbsp;&nbsp;stackview&nbsp;&nbsp;&nbsp;•&#x25C0; •&nbsp;&nbsp; scroll&nbsp; down&nbsp; to &nbsp;see&nbsp; more</>
+                text: <> &nbsp;•&nbsp;&nbsp;•&nbsp;&nbsp;•&nbsp;&nbsp;stackview&nbsp;&nbsp;•&nbsp;&nbsp; •&nbsp;&nbsp; •&nbsp; scroll&nbsp; down&nbsp; to &nbsp;see&nbsp; more</>
             })
         }
         console.log(this.state.progress);

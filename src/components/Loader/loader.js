@@ -4,7 +4,7 @@ export default function loader() {
 
     return <div className="loader">
         <div className="loading">
-            <svg id="svgC" width="800" height="800" viewBox="0 0 10000 10000" fillRule="evenodd">
+            <svg id="svgC" width="5000" height="800" viewBox="0 0 10000 10000" fillRule="evenodd">
                 <defs>
                     <radialGradient id="orange">
                         <stop offset="1" stopOpacity="1" stopColor="#ff6600" >
@@ -66,7 +66,7 @@ export default function loader() {
                     <path id="diskpath1" fill="none" stroke="black" strokeWidth="100" d="M9000 -5000, Q5000, 4000 5500 6400" />
                     <path id="diskpath2" fill="none" stroke="black" strokeWidth="100" d="M5500 6400, Q2500, 4200 3000 6400" />
                     <path id="diskpath3" fill="none" stroke="black" strokeWidth="100" d="M3000 6400, Q2000, 5000 1500 6400" />
-                    <path id="diskpath4" fill="none" stroke="black" strokeWidth="100" d="M1500 6400, L-6000 6400" />
+                    <path id="diskpath4" fill="none" stroke="black" strokeWidth="100" d="M1500 6400, L-11000 6400" />
 
                     <circle r="210" id="disk"fill="none" opacity="0" stroke="white" strokeWidth="340" >
                     <animate id="animation1"
@@ -86,7 +86,7 @@ export default function loader() {
                         fill="freeze">
                             <mpath xlinkHref="#diskpath3" />
                             </animateMotion>
-                            <animateMotion xlinkHref="#disk" dur="0.9s" begin="5.0"                     
+                            <animateMotion xlinkHref="#disk" dur="1.2s" begin="5.0"                     
                         fill="freeze">
                             <mpath xlinkHref="#diskpath4" />
                             </animateMotion>
@@ -778,7 +778,16 @@ export default function loader() {
         </div>
         <div className="boxOrange">
         <div className="loading">
-            <svg width="800" height="800" viewBox="0 0 10000 10000" fillRule="evenodd">
+            <svg width="5000" height="0" viewBox="0 0 10000 10000" fillRule="evenodd">
+            <animate
+                            attributeName="height"
+                            begin="6s"
+                            from="0"
+                            to="800"
+                            dur="0.9s"
+                            
+                            fill="freeze"
+                        />
             <g transform="" opacity="0">
                 <animate id="animation1"
                             attributeName="opacity"
@@ -807,7 +816,7 @@ export default function loader() {
                             fill="freeze"
                         />
                     </circle>
-                    <circle cx="5000" cy="5000"  fill="url(#orange)" r="9000" >
+                    <circle cx="5000" cy="5000"  fill="url(#orange)" r="10000" >
                     
                     </circle>
                 

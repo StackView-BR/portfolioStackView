@@ -1,5 +1,9 @@
 /// DEVS 
 .devs{
+    background: black;
+    display: block;
+  }
+  .aboutDevs{
     width: 100%;
     height: 100vh;
     background: black;
@@ -19,5 +23,43 @@
   .devsMenu{
     display: grid;
     width: 100%;
+    justify-content: center;
   }
   
+  .listDevs{
+    width: 100%;
+    height: auto;
+    background: gray;
+    justify-content: center;
+    display: flex;
+  }
+
+  .listDevs .title{
+    float: left;
+    font-size: xx-large !important;
+  }
+
+  .devFoto img{
+    border-radius: 50%;
+  }
+  .devFoto{
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    cursor: pointer;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;    
+    background:black;
+    border: white;
+    
+  }
+  .downloadButton{
+    background-color: chocolate;
+  }
+  .imgContainer{
+    margin-top: 3px;
+    position: absolute;
+
+  }
